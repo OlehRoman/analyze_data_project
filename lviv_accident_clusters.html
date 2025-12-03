@@ -1,0 +1,2444 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0e7b7db3345c16e2e2323a9b6575e03b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0e7b7db3345c16e2e2323a9b6575e03b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0e7b7db3345c16e2e2323a9b6575e03b = L.map(
+                "map_0e7b7db3345c16e2e2323a9b6575e03b",
+                {
+                    center: [49.8397, 24.0297],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_290236b26245be2e796cbe0b4a267f13 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_290236b26245be2e796cbe0b4a267f13.addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+            var circle_marker_226a9bcd77d121fbfc8fc679285b2081 = L.circleMarker(
+                [49.83782277150034, 24.005678928843906],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 171.5, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_3b3d512ec65c9c2ab271d14a20344596 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_fb8410fadf38f32d9e0392396a02fc63 = $(`<div id="html_fb8410fadf38f32d9e0392396a02fc63" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #0</h4>         <b>Кількість ДТП:</b> 111<br>         <b>Головна причина:</b> порушення правил маневрування<br>         <b>Пікова година:</b> 20:00<br>     </div>     </div>`)[0];
+                popup_3b3d512ec65c9c2ab271d14a20344596.setContent(html_fb8410fadf38f32d9e0392396a02fc63);
+            
+        
+
+        circle_marker_226a9bcd77d121fbfc8fc679285b2081.bindPopup(popup_3b3d512ec65c9c2ab271d14a20344596)
+        ;
+
+        
+    
+    
+            circle_marker_226a9bcd77d121fbfc8fc679285b2081.bindTooltip(
+                `<div>
+                     Зона #0: порушення правил маневрування
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_031b8a1a0e16d6e9f93d58d51c4cfe5f = L.circleMarker(
+                [49.82964329528239, 24.031834391015106],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 59.0, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_e47c52a296a5b78e7f4f6e5daa6715a6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ac6bcbfeef6a7df4b00fad1c84272274 = $(`<div id="html_ac6bcbfeef6a7df4b00fad1c84272274" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #1</h4>         <b>Кількість ДТП:</b> 36<br>         <b>Головна причина:</b> порушення правил маневрування<br>         <b>Пікова година:</b> 14:00<br>     </div>     </div>`)[0];
+                popup_e47c52a296a5b78e7f4f6e5daa6715a6.setContent(html_ac6bcbfeef6a7df4b00fad1c84272274);
+            
+        
+
+        circle_marker_031b8a1a0e16d6e9f93d58d51c4cfe5f.bindPopup(popup_e47c52a296a5b78e7f4f6e5daa6715a6)
+        ;
+
+        
+    
+    
+            circle_marker_031b8a1a0e16d6e9f93d58d51c4cfe5f.bindTooltip(
+                `<div>
+                     Зона #1: порушення правил маневрування
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_66c585e82355a9a34ef83a2786107df0 = L.circleMarker(
+                [49.799812440000004, 24.026751479999998],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 42.5, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_a40cb69a1d07f04db0a072bc5e57c036 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_163c48078c3a10bc96c5a51b9b3a0baf = $(`<div id="html_163c48078c3a10bc96c5a51b9b3a0baf" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #2</h4>         <b>Кількість ДТП:</b> 25<br>         <b>Головна причина:</b> порушення правил маневрування<br>         <b>Пікова година:</b> 14:00<br>     </div>     </div>`)[0];
+                popup_a40cb69a1d07f04db0a072bc5e57c036.setContent(html_163c48078c3a10bc96c5a51b9b3a0baf);
+            
+        
+
+        circle_marker_66c585e82355a9a34ef83a2786107df0.bindPopup(popup_a40cb69a1d07f04db0a072bc5e57c036)
+        ;
+
+        
+    
+    
+            circle_marker_66c585e82355a9a34ef83a2786107df0.bindTooltip(
+                `<div>
+                     Зона #2: порушення правил маневрування
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_eaac2fa64eb4e2920b94002a026df2ce = L.circleMarker(
+                [49.81244484684567, 24.00014005177888],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 45.5, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_54f29a67b8551a82ba2520ec508b0d77 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_af119e0b4a6cc40c2555d68bd307027b = $(`<div id="html_af119e0b4a6cc40c2555d68bd307027b" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #3</h4>         <b>Кількість ДТП:</b> 27<br>         <b>Головна причина:</b> порушення правил маневрування<br>         <b>Пікова година:</b> 12:00<br>     </div>     </div>`)[0];
+                popup_54f29a67b8551a82ba2520ec508b0d77.setContent(html_af119e0b4a6cc40c2555d68bd307027b);
+            
+        
+
+        circle_marker_eaac2fa64eb4e2920b94002a026df2ce.bindPopup(popup_54f29a67b8551a82ba2520ec508b0d77)
+        ;
+
+        
+    
+    
+            circle_marker_eaac2fa64eb4e2920b94002a026df2ce.bindTooltip(
+                `<div>
+                     Зона #3: порушення правил маневрування
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6442f7036bcdb5aa19006c3834376931 = L.circleMarker(
+                [49.830613122807016, 23.96922992982456],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 90.5, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_150c0743eef1c90b4e3df96d842487ca = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b19274943891884fc2081681dc2332a5 = $(`<div id="html_b19274943891884fc2081681dc2332a5" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #4</h4>         <b>Кількість ДТП:</b> 57<br>         <b>Головна причина:</b> порушення правил маневрування<br>         <b>Пікова година:</b> 13:00<br>     </div>     </div>`)[0];
+                popup_150c0743eef1c90b4e3df96d842487ca.setContent(html_b19274943891884fc2081681dc2332a5);
+            
+        
+
+        circle_marker_6442f7036bcdb5aa19006c3834376931.bindPopup(popup_150c0743eef1c90b4e3df96d842487ca)
+        ;
+
+        
+    
+    
+            circle_marker_6442f7036bcdb5aa19006c3834376931.bindTooltip(
+                `<div>
+                     Зона #4: порушення правил маневрування
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_326b8fa895de14146be2adb6df0c3024 = L.circleMarker(
+                [49.83944124159777, 24.038375167165892],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 132.5, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_71cb05e01daf5246cf1bf8bdd9aba36b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ef327f2aeb3c997b69bdc8ce2212a9d0 = $(`<div id="html_ef327f2aeb3c997b69bdc8ce2212a9d0" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #5</h4>         <b>Кількість ДТП:</b> 85<br>         <b>Головна причина:</b> порушення правил маневрування<br>         <b>Пікова година:</b> 16:00<br>     </div>     </div>`)[0];
+                popup_71cb05e01daf5246cf1bf8bdd9aba36b.setContent(html_ef327f2aeb3c997b69bdc8ce2212a9d0);
+            
+        
+
+        circle_marker_326b8fa895de14146be2adb6df0c3024.bindPopup(popup_71cb05e01daf5246cf1bf8bdd9aba36b)
+        ;
+
+        
+    
+    
+            circle_marker_326b8fa895de14146be2adb6df0c3024.bindTooltip(
+                `<div>
+                     Зона #5: порушення правил маневрування
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7e51b97872f9fb5229fa3491024dfdf2 = L.circleMarker(
+                [49.86990305610048, 24.057299835026683],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 59.0, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_31b1655db3ebd00fb5f68f350ce621e7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9732c2e7ca549fba8e2b5ba31f884229 = $(`<div id="html_9732c2e7ca549fba8e2b5ba31f884229" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #6</h4>         <b>Кількість ДТП:</b> 36<br>         <b>Головна причина:</b> Невідомо<br>         <b>Пікова година:</b> 20:00<br>     </div>     </div>`)[0];
+                popup_31b1655db3ebd00fb5f68f350ce621e7.setContent(html_9732c2e7ca549fba8e2b5ba31f884229);
+            
+        
+
+        circle_marker_7e51b97872f9fb5229fa3491024dfdf2.bindPopup(popup_31b1655db3ebd00fb5f68f350ce621e7)
+        ;
+
+        
+    
+    
+            circle_marker_7e51b97872f9fb5229fa3491024dfdf2.bindTooltip(
+                `<div>
+                     Зона #6: Невідомо
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_be1fd9055cfdaad26ff8edf575c5c53d = L.circleMarker(
+                [49.82152534782608, 24.075556869565215],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 39.5, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_60b3656a66773f8bb74af75c5eef426b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_be895edd87933b32c0bbbab77b7e9c8e = $(`<div id="html_be895edd87933b32c0bbbab77b7e9c8e" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #7</h4>         <b>Кількість ДТП:</b> 23<br>         <b>Головна причина:</b> порушення правил маневрування<br>         <b>Пікова година:</b> 11:00<br>     </div>     </div>`)[0];
+                popup_60b3656a66773f8bb74af75c5eef426b.setContent(html_be895edd87933b32c0bbbab77b7e9c8e);
+            
+        
+
+        circle_marker_be1fd9055cfdaad26ff8edf575c5c53d.bindPopup(popup_60b3656a66773f8bb74af75c5eef426b)
+        ;
+
+        
+    
+    
+            circle_marker_be1fd9055cfdaad26ff8edf575c5c53d.bindTooltip(
+                `<div>
+                     Зона #7: порушення правил маневрування
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_196c07156fdde1e496404f9c5a3dd05c = L.circleMarker(
+                [49.86014328571429, 24.026887285714285],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 47.0, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_5fda57a94e88408e84ff51da7d932ed3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7b2d42f137895bc41f84f9192c8a1f12 = $(`<div id="html_7b2d42f137895bc41f84f9192c8a1f12" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #8</h4>         <b>Кількість ДТП:</b> 28<br>         <b>Головна причина:</b> порушення правил проїзду перехресть<br>         <b>Пікова година:</b> 19:00<br>     </div>     </div>`)[0];
+                popup_5fda57a94e88408e84ff51da7d932ed3.setContent(html_7b2d42f137895bc41f84f9192c8a1f12);
+            
+        
+
+        circle_marker_196c07156fdde1e496404f9c5a3dd05c.bindPopup(popup_5fda57a94e88408e84ff51da7d932ed3)
+        ;
+
+        
+    
+    
+            circle_marker_196c07156fdde1e496404f9c5a3dd05c.bindTooltip(
+                `<div>
+                     Зона #8: порушення правил проїзду перехресть
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ed22a0f69e0e767d5f2da41ee08a030c = L.circleMarker(
+                [49.797491471007525, 24.051577286818304],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 155.0, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_b518f8ed6879a5d858e411d2c6538521 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b60db39103531b66a4d43bfd1cd47b0c = $(`<div id="html_b60db39103531b66a4d43bfd1cd47b0c" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #9</h4>         <b>Кількість ДТП:</b> 100<br>         <b>Головна причина:</b> порушення правил маневрування<br>         <b>Пікова година:</b> 16:00<br>     </div>     </div>`)[0];
+                popup_b518f8ed6879a5d858e411d2c6538521.setContent(html_b60db39103531b66a4d43bfd1cd47b0c);
+            
+        
+
+        circle_marker_ed22a0f69e0e767d5f2da41ee08a030c.bindPopup(popup_b518f8ed6879a5d858e411d2c6538521)
+        ;
+
+        
+    
+    
+            circle_marker_ed22a0f69e0e767d5f2da41ee08a030c.bindTooltip(
+                `<div>
+                     Зона #9: порушення правил маневрування
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dc0e4e5ac9955346178622f95aabd68a = L.circleMarker(
+                [49.81020644444445, 24.001346472222224],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 59.0, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_81e83ea8fab509157f20458552b91df5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9bd5f4109f3ffd2b6214c7bb589a44ac = $(`<div id="html_9bd5f4109f3ffd2b6214c7bb589a44ac" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #10</h4>         <b>Кількість ДТП:</b> 36<br>         <b>Головна причина:</b> порушення правил проїзду пішохідних переходів<br>         <b>Пікова година:</b> 11:00<br>     </div>     </div>`)[0];
+                popup_81e83ea8fab509157f20458552b91df5.setContent(html_9bd5f4109f3ffd2b6214c7bb589a44ac);
+            
+        
+
+        circle_marker_dc0e4e5ac9955346178622f95aabd68a.bindPopup(popup_81e83ea8fab509157f20458552b91df5)
+        ;
+
+        
+    
+    
+            circle_marker_dc0e4e5ac9955346178622f95aabd68a.bindTooltip(
+                `<div>
+                     Зона #10: порушення правил проїзду пішохідних переходів
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a0d294e98a5ca98b57479ab35a0bb653 = L.circleMarker(
+                [49.84308269028588, 24.02485044514167],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 521.0, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_352f7e030608539e39b565e36a6e9cb7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a3303e0fa059ce244bb4090562ef6c9e = $(`<div id="html_a3303e0fa059ce244bb4090562ef6c9e" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #11</h4>         <b>Кількість ДТП:</b> 344<br>         <b>Головна причина:</b> порушення правил маневрування<br>         <b>Пікова година:</b> 19:00<br>     </div>     </div>`)[0];
+                popup_352f7e030608539e39b565e36a6e9cb7.setContent(html_a3303e0fa059ce244bb4090562ef6c9e);
+            
+        
+
+        circle_marker_a0d294e98a5ca98b57479ab35a0bb653.bindPopup(popup_352f7e030608539e39b565e36a6e9cb7)
+        ;
+
+        
+    
+    
+            circle_marker_a0d294e98a5ca98b57479ab35a0bb653.bindTooltip(
+                `<div>
+                     Зона #11: порушення правил маневрування
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9f29a54ece9849a5f002cd74129f1380 = L.circleMarker(
+                [49.85700201265823, 24.021753177215192],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 123.5, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_b72555904c6524be8b45cefcfa9cf075 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2188eb6e6458ae90b5766303c3f84ef0 = $(`<div id="html_2188eb6e6458ae90b5766303c3f84ef0" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #12</h4>         <b>Кількість ДТП:</b> 79<br>         <b>Головна причина:</b> порушення правил маневрування<br>         <b>Пікова година:</b> 18:00<br>     </div>     </div>`)[0];
+                popup_b72555904c6524be8b45cefcfa9cf075.setContent(html_2188eb6e6458ae90b5766303c3f84ef0);
+            
+        
+
+        circle_marker_9f29a54ece9849a5f002cd74129f1380.bindPopup(popup_b72555904c6524be8b45cefcfa9cf075)
+        ;
+
+        
+    
+    
+            circle_marker_9f29a54ece9849a5f002cd74129f1380.bindTooltip(
+                `<div>
+                     Зона #12: порушення правил маневрування
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ce7273561ebd099bca0f67e1a98b14cb = L.circleMarker(
+                [49.823965459156085, 23.97717351876165],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 90.5, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_72e02adf56c0d0ebd1cf64e86217c6cc = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_14dddf160d5c487ad6e9d96bcd3ac832 = $(`<div id="html_14dddf160d5c487ad6e9d96bcd3ac832" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #13</h4>         <b>Кількість ДТП:</b> 57<br>         <b>Головна причина:</b> порушення правил маневрування<br>         <b>Пікова година:</b> 21:00<br>     </div>     </div>`)[0];
+                popup_72e02adf56c0d0ebd1cf64e86217c6cc.setContent(html_14dddf160d5c487ad6e9d96bcd3ac832);
+            
+        
+
+        circle_marker_ce7273561ebd099bca0f67e1a98b14cb.bindPopup(popup_72e02adf56c0d0ebd1cf64e86217c6cc)
+        ;
+
+        
+    
+    
+            circle_marker_ce7273561ebd099bca0f67e1a98b14cb.bindTooltip(
+                `<div>
+                     Зона #13: порушення правил маневрування
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_99748720ba9c78f12e6073076eed8601 = L.circleMarker(
+                [49.82123626315789, 23.988557368421056],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 33.5, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_d6cae455f04cd1e0f099df0ffd036b69 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_73aabeeba7b2d1befdda2dd152ce429b = $(`<div id="html_73aabeeba7b2d1befdda2dd152ce429b" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #14</h4>         <b>Кількість ДТП:</b> 19<br>         <b>Головна причина:</b> порушення правил проїзду перехресть<br>         <b>Пікова година:</b> 8:00<br>     </div>     </div>`)[0];
+                popup_d6cae455f04cd1e0f099df0ffd036b69.setContent(html_73aabeeba7b2d1befdda2dd152ce429b);
+            
+        
+
+        circle_marker_99748720ba9c78f12e6073076eed8601.bindPopup(popup_d6cae455f04cd1e0f099df0ffd036b69)
+        ;
+
+        
+    
+    
+            circle_marker_99748720ba9c78f12e6073076eed8601.bindTooltip(
+                `<div>
+                     Зона #14: порушення правил проїзду перехресть
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cf2912090cab6b655666c7795e64f121 = L.circleMarker(
+                [49.81705472727273, 23.986710954545455],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 71.0, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_ef14b8004c4fc4ddcebbfc5068153dc8 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_48b174a7e450c8e889d8276073035000 = $(`<div id="html_48b174a7e450c8e889d8276073035000" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #15</h4>         <b>Кількість ДТП:</b> 44<br>         <b>Головна причина:</b> порушення правил маневрування<br>         <b>Пікова година:</b> 19:00<br>     </div>     </div>`)[0];
+                popup_ef14b8004c4fc4ddcebbfc5068153dc8.setContent(html_48b174a7e450c8e889d8276073035000);
+            
+        
+
+        circle_marker_cf2912090cab6b655666c7795e64f121.bindPopup(popup_ef14b8004c4fc4ddcebbfc5068153dc8)
+        ;
+
+        
+    
+    
+            circle_marker_cf2912090cab6b655666c7795e64f121.bindTooltip(
+                `<div>
+                     Зона #15: порушення правил маневрування
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b31171e97c91e2798fb537cd7122d4f7 = L.circleMarker(
+                [49.80658326315789, 24.06216342105263],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 33.5, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_380a55d7db7c74ef974a1664c081541f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5badad3101f9c758bf8b5d2d6bec42c3 = $(`<div id="html_5badad3101f9c758bf8b5d2d6bec42c3" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #16</h4>         <b>Кількість ДТП:</b> 19<br>         <b>Головна причина:</b> порушення правил маневрування<br>         <b>Пікова година:</b> 16:00<br>     </div>     </div>`)[0];
+                popup_380a55d7db7c74ef974a1664c081541f.setContent(html_5badad3101f9c758bf8b5d2d6bec42c3);
+            
+        
+
+        circle_marker_b31171e97c91e2798fb537cd7122d4f7.bindPopup(popup_380a55d7db7c74ef974a1664c081541f)
+        ;
+
+        
+    
+    
+            circle_marker_b31171e97c91e2798fb537cd7122d4f7.bindTooltip(
+                `<div>
+                     Зона #16: порушення правил маневрування
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_389d618b814f428c36dba44cfede9af5 = L.circleMarker(
+                [49.80512154054054, 23.986783324324325],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 60.5, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_bbe040365e46a5a6e20dcb63f00be2cc = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9b2088c2901a2b6aa9edeca9ec258949 = $(`<div id="html_9b2088c2901a2b6aa9edeca9ec258949" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #17</h4>         <b>Кількість ДТП:</b> 37<br>         <b>Головна причина:</b> порушення правил маневрування<br>         <b>Пікова година:</b> 18:00<br>     </div>     </div>`)[0];
+                popup_bbe040365e46a5a6e20dcb63f00be2cc.setContent(html_9b2088c2901a2b6aa9edeca9ec258949);
+            
+        
+
+        circle_marker_389d618b814f428c36dba44cfede9af5.bindPopup(popup_bbe040365e46a5a6e20dcb63f00be2cc)
+        ;
+
+        
+    
+    
+            circle_marker_389d618b814f428c36dba44cfede9af5.bindTooltip(
+                `<div>
+                     Зона #17: порушення правил маневрування
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cf2f7fed6b86ddb1c81433ce9cd5ad53 = L.circleMarker(
+                [49.82067851140189, 23.96921939890218],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 42.5, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_024edeb4a2e2297bbb5adf607a66936f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6d6b14f734f982c24bc3d8d80ae3d080 = $(`<div id="html_6d6b14f734f982c24bc3d8d80ae3d080" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #18</h4>         <b>Кількість ДТП:</b> 25<br>         <b>Головна причина:</b> порушення правил маневрування<br>         <b>Пікова година:</b> 8:00<br>     </div>     </div>`)[0];
+                popup_024edeb4a2e2297bbb5adf607a66936f.setContent(html_6d6b14f734f982c24bc3d8d80ae3d080);
+            
+        
+
+        circle_marker_cf2f7fed6b86ddb1c81433ce9cd5ad53.bindPopup(popup_024edeb4a2e2297bbb5adf607a66936f)
+        ;
+
+        
+    
+    
+            circle_marker_cf2f7fed6b86ddb1c81433ce9cd5ad53.bindTooltip(
+                `<div>
+                     Зона #18: порушення правил маневрування
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cf061975f770679421fdb9965bd5b63d = L.circleMarker(
+                [49.85017343902439, 24.024445341463416],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 66.5, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_6d40b62e59b42a97cfe3437d7c97c52d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_98423d7681e3eedbedcf346fb44c7db3 = $(`<div id="html_98423d7681e3eedbedcf346fb44c7db3" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #19</h4>         <b>Кількість ДТП:</b> 41<br>         <b>Головна причина:</b> порушення правил маневрування<br>         <b>Пікова година:</b> 18:00<br>     </div>     </div>`)[0];
+                popup_6d40b62e59b42a97cfe3437d7c97c52d.setContent(html_98423d7681e3eedbedcf346fb44c7db3);
+            
+        
+
+        circle_marker_cf061975f770679421fdb9965bd5b63d.bindPopup(popup_6d40b62e59b42a97cfe3437d7c97c52d)
+        ;
+
+        
+    
+    
+            circle_marker_cf061975f770679421fdb9965bd5b63d.bindTooltip(
+                `<div>
+                     Зона #19: порушення правил маневрування
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_47e228c5bc47906d2239388b2e679ee8 = L.circleMarker(
+                [49.86325362044074, 24.032602743774653],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 66.5, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_f1fa828b171b07cfcfe72f7bfa5137e3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9c2ec3537c58880221d26e4930d05216 = $(`<div id="html_9c2ec3537c58880221d26e4930d05216" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #20</h4>         <b>Кількість ДТП:</b> 41<br>         <b>Головна причина:</b> порушення правил маневрування<br>         <b>Пікова година:</b> 20:00<br>     </div>     </div>`)[0];
+                popup_f1fa828b171b07cfcfe72f7bfa5137e3.setContent(html_9c2ec3537c58880221d26e4930d05216);
+            
+        
+
+        circle_marker_47e228c5bc47906d2239388b2e679ee8.bindPopup(popup_f1fa828b171b07cfcfe72f7bfa5137e3)
+        ;
+
+        
+    
+    
+            circle_marker_47e228c5bc47906d2239388b2e679ee8.bindTooltip(
+                `<div>
+                     Зона #20: порушення правил маневрування
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_19a5036ce761c1c64b329b5584ef9a24 = L.circleMarker(
+                [49.79831807957501, 24.017234140867927],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 42.5, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_323e7a185f82e276a003603843cf1c3f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f3afa34ec148c721a7b80be60ba7d9e0 = $(`<div id="html_f3afa34ec148c721a7b80be60ba7d9e0" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #21</h4>         <b>Кількість ДТП:</b> 25<br>         <b>Головна причина:</b> перевищення безпечної швидкості<br>         <b>Пікова година:</b> 8:00<br>     </div>     </div>`)[0];
+                popup_323e7a185f82e276a003603843cf1c3f.setContent(html_f3afa34ec148c721a7b80be60ba7d9e0);
+            
+        
+
+        circle_marker_19a5036ce761c1c64b329b5584ef9a24.bindPopup(popup_323e7a185f82e276a003603843cf1c3f)
+        ;
+
+        
+    
+    
+            circle_marker_19a5036ce761c1c64b329b5584ef9a24.bindTooltip(
+                `<div>
+                     Зона #21: перевищення безпечної швидкості
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f92a5b10ed2443a462b19283ddc77cfc = L.circleMarker(
+                [49.79461141535209, 24.064374827040332],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 51.5, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_031283d9c21f446316e6a9b84ae2c88a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f4e828fb1b6552d3eef2e944d9d0d530 = $(`<div id="html_f4e828fb1b6552d3eef2e944d9d0d530" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #22</h4>         <b>Кількість ДТП:</b> 31<br>         <b>Головна причина:</b> порушення правил маневрування<br>         <b>Пікова година:</b> 22:00<br>     </div>     </div>`)[0];
+                popup_031283d9c21f446316e6a9b84ae2c88a.setContent(html_f4e828fb1b6552d3eef2e944d9d0d530);
+            
+        
+
+        circle_marker_f92a5b10ed2443a462b19283ddc77cfc.bindPopup(popup_031283d9c21f446316e6a9b84ae2c88a)
+        ;
+
+        
+    
+    
+            circle_marker_f92a5b10ed2443a462b19283ddc77cfc.bindTooltip(
+                `<div>
+                     Зона #22: порушення правил маневрування
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_50ffda997ff638693f79fd316d964a3f = L.circleMarker(
+                [49.79838679301737, 24.071142726038932],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 39.5, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_50573162ceba1ba54fe326f8e3d0d31a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a57408d03a9e6190b6da15aa1a6bd018 = $(`<div id="html_a57408d03a9e6190b6da15aa1a6bd018" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #23</h4>         <b>Кількість ДТП:</b> 23<br>         <b>Головна причина:</b> порушення правил маневрування<br>         <b>Пікова година:</b> 13:00<br>     </div>     </div>`)[0];
+                popup_50573162ceba1ba54fe326f8e3d0d31a.setContent(html_a57408d03a9e6190b6da15aa1a6bd018);
+            
+        
+
+        circle_marker_50ffda997ff638693f79fd316d964a3f.bindPopup(popup_50573162ceba1ba54fe326f8e3d0d31a)
+        ;
+
+        
+    
+    
+            circle_marker_50ffda997ff638693f79fd316d964a3f.bindTooltip(
+                `<div>
+                     Зона #23: порушення правил маневрування
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_378fbc4ccf92daae1d71ffe3ee2ebb8b = L.circleMarker(
+                [49.81311207407408, 23.97784648148148],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 45.5, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_dd045500327cb7b1fa5fa775d2e6bb37 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0d6ac9468b5f63f8dd0db6ade9706370 = $(`<div id="html_0d6ac9468b5f63f8dd0db6ade9706370" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #24</h4>         <b>Кількість ДТП:</b> 27<br>         <b>Головна причина:</b> порушення правил маневрування<br>         <b>Пікова година:</b> 17:00<br>     </div>     </div>`)[0];
+                popup_dd045500327cb7b1fa5fa775d2e6bb37.setContent(html_0d6ac9468b5f63f8dd0db6ade9706370);
+            
+        
+
+        circle_marker_378fbc4ccf92daae1d71ffe3ee2ebb8b.bindPopup(popup_dd045500327cb7b1fa5fa775d2e6bb37)
+        ;
+
+        
+    
+    
+            circle_marker_378fbc4ccf92daae1d71ffe3ee2ebb8b.bindTooltip(
+                `<div>
+                     Зона #24: порушення правил маневрування
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_153a947e0cb05505576182b7cb54f2f3 = L.circleMarker(
+                [49.81643668421052, 24.002372368421053],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 33.5, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_2c0f2d27ae94a299dec07aa36ee7c694 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6e2916e9226e76625044b37848c74823 = $(`<div id="html_6e2916e9226e76625044b37848c74823" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #25</h4>         <b>Кількість ДТП:</b> 19<br>         <b>Головна причина:</b> порушення правил маневрування<br>         <b>Пікова година:</b> 14:00<br>     </div>     </div>`)[0];
+                popup_2c0f2d27ae94a299dec07aa36ee7c694.setContent(html_6e2916e9226e76625044b37848c74823);
+            
+        
+
+        circle_marker_153a947e0cb05505576182b7cb54f2f3.bindPopup(popup_2c0f2d27ae94a299dec07aa36ee7c694)
+        ;
+
+        
+    
+    
+            circle_marker_153a947e0cb05505576182b7cb54f2f3.bindTooltip(
+                `<div>
+                     Зона #25: порушення правил маневрування
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_93e773b453647a870dfe66bd6763da2e = L.circleMarker(
+                [49.803945389663724, 23.980919882827468],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 69.5, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_6c45c0e000e8bed158e6d0c83fbdca09 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a2fcd233e30a3fa14915c2c1417cd311 = $(`<div id="html_a2fcd233e30a3fa14915c2c1417cd311" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #26</h4>         <b>Кількість ДТП:</b> 43<br>         <b>Головна причина:</b> порушення правил маневрування<br>         <b>Пікова година:</b> 22:00<br>     </div>     </div>`)[0];
+                popup_6c45c0e000e8bed158e6d0c83fbdca09.setContent(html_a2fcd233e30a3fa14915c2c1417cd311);
+            
+        
+
+        circle_marker_93e773b453647a870dfe66bd6763da2e.bindPopup(popup_6c45c0e000e8bed158e6d0c83fbdca09)
+        ;
+
+        
+    
+    
+            circle_marker_93e773b453647a870dfe66bd6763da2e.bindTooltip(
+                `<div>
+                     Зона #26: порушення правил маневрування
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9db6091270d5a75fa2214faaf4e4b6d4 = L.circleMarker(
+                [49.8741063796875, 24.060852881875],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 53.0, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_b97c3fdff6b2e58f612abe1e14564c0a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5184d9a6f2004c9b1d578b54f77a23cf = $(`<div id="html_5184d9a6f2004c9b1d578b54f77a23cf" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #27</h4>         <b>Кількість ДТП:</b> 32<br>         <b>Головна причина:</b> порушення правил маневрування<br>         <b>Пікова година:</b> 21:00<br>     </div>     </div>`)[0];
+                popup_b97c3fdff6b2e58f612abe1e14564c0a.setContent(html_5184d9a6f2004c9b1d578b54f77a23cf);
+            
+        
+
+        circle_marker_9db6091270d5a75fa2214faaf4e4b6d4.bindPopup(popup_b97c3fdff6b2e58f612abe1e14564c0a)
+        ;
+
+        
+    
+    
+            circle_marker_9db6091270d5a75fa2214faaf4e4b6d4.bindTooltip(
+                `<div>
+                     Зона #27: порушення правил маневрування
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cdc0f4aaa8f1b13a156ce6e33fbc25c7 = L.circleMarker(
+                [49.835685775, 23.99654755],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 65.0, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_853723c85e4a5ee1dd2fa4962e01f54f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_31c8d8eda6231035d7cb1ac249c307ec = $(`<div id="html_31c8d8eda6231035d7cb1ac249c307ec" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #28</h4>         <b>Кількість ДТП:</b> 40<br>         <b>Головна причина:</b> порушення правил маневрування<br>         <b>Пікова година:</b> 20:00<br>     </div>     </div>`)[0];
+                popup_853723c85e4a5ee1dd2fa4962e01f54f.setContent(html_31c8d8eda6231035d7cb1ac249c307ec);
+            
+        
+
+        circle_marker_cdc0f4aaa8f1b13a156ce6e33fbc25c7.bindPopup(popup_853723c85e4a5ee1dd2fa4962e01f54f)
+        ;
+
+        
+    
+    
+            circle_marker_cdc0f4aaa8f1b13a156ce6e33fbc25c7.bindTooltip(
+                `<div>
+                     Зона #28: порушення правил маневрування
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3a2b81d422940ce91bd78129352e0a38 = L.circleMarker(
+                [49.8647274375, 24.0411365],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 29.0, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_99c426eb3f3f7b6a55defb7cf897d294 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_21dd29fc0bc3a4ceda8dabc44c0b1b2f = $(`<div id="html_21dd29fc0bc3a4ceda8dabc44c0b1b2f" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #29</h4>         <b>Кількість ДТП:</b> 16<br>         <b>Головна причина:</b> порушення правил маневрування<br>         <b>Пікова година:</b> 12:00<br>     </div>     </div>`)[0];
+                popup_99c426eb3f3f7b6a55defb7cf897d294.setContent(html_21dd29fc0bc3a4ceda8dabc44c0b1b2f);
+            
+        
+
+        circle_marker_3a2b81d422940ce91bd78129352e0a38.bindPopup(popup_99c426eb3f3f7b6a55defb7cf897d294)
+        ;
+
+        
+    
+    
+            circle_marker_3a2b81d422940ce91bd78129352e0a38.bindTooltip(
+                `<div>
+                     Зона #29: порушення правил маневрування
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a1ebb12658930cd2a8cbe83792574652 = L.circleMarker(
+                [49.812252378378375, 23.98348518918919],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 60.5, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_133f2246cca133283f7efb0192be59cb = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e76ddd4effcd084e7d973a3e9121b0bd = $(`<div id="html_e76ddd4effcd084e7d973a3e9121b0bd" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #30</h4>         <b>Кількість ДТП:</b> 37<br>         <b>Головна причина:</b> порушення правил маневрування<br>         <b>Пікова година:</b> 19:00<br>     </div>     </div>`)[0];
+                popup_133f2246cca133283f7efb0192be59cb.setContent(html_e76ddd4effcd084e7d973a3e9121b0bd);
+            
+        
+
+        circle_marker_a1ebb12658930cd2a8cbe83792574652.bindPopup(popup_133f2246cca133283f7efb0192be59cb)
+        ;
+
+        
+    
+    
+            circle_marker_a1ebb12658930cd2a8cbe83792574652.bindTooltip(
+                `<div>
+                     Зона #30: порушення правил маневрування
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_344644dee300ace7790c7813dad3d361 = L.circleMarker(
+                [49.844302354545455, 24.032014686363638],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 38.0, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_282bd1188b2994efefa2c03c94e78680 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2e2fd83f8d73ebe53a640c4244b8c4a1 = $(`<div id="html_2e2fd83f8d73ebe53a640c4244b8c4a1" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #31</h4>         <b>Кількість ДТП:</b> 22<br>         <b>Головна причина:</b> порушення правил маневрування<br>         <b>Пікова година:</b> 18:00<br>     </div>     </div>`)[0];
+                popup_282bd1188b2994efefa2c03c94e78680.setContent(html_2e2fd83f8d73ebe53a640c4244b8c4a1);
+            
+        
+
+        circle_marker_344644dee300ace7790c7813dad3d361.bindPopup(popup_282bd1188b2994efefa2c03c94e78680)
+        ;
+
+        
+    
+    
+            circle_marker_344644dee300ace7790c7813dad3d361.bindTooltip(
+                `<div>
+                     Зона #31: порушення правил маневрування
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0f9a3dd22701f9f70b385f8241aebcfa = L.circleMarker(
+                [49.807822458333334, 24.01865545833333],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 41.0, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_95a3111ce4bda6388a340989b8ba07cf = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_44b86584523f8f6f6e7d6beb0f498321 = $(`<div id="html_44b86584523f8f6f6e7d6beb0f498321" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #32</h4>         <b>Кількість ДТП:</b> 24<br>         <b>Головна причина:</b> Невідомо<br>         <b>Пікова година:</b> 18:00<br>     </div>     </div>`)[0];
+                popup_95a3111ce4bda6388a340989b8ba07cf.setContent(html_44b86584523f8f6f6e7d6beb0f498321);
+            
+        
+
+        circle_marker_0f9a3dd22701f9f70b385f8241aebcfa.bindPopup(popup_95a3111ce4bda6388a340989b8ba07cf)
+        ;
+
+        
+    
+    
+            circle_marker_0f9a3dd22701f9f70b385f8241aebcfa.bindTooltip(
+                `<div>
+                     Зона #32: Невідомо
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f933c60f376c979bcfaf23dec8136999 = L.circleMarker(
+                [49.82918483870967, 23.959991322580645],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 51.5, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_2c61be22827989089189ae7d56024e22 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_dafbe48ba3a1eec613b5c5d7bbeb9c61 = $(`<div id="html_dafbe48ba3a1eec613b5c5d7bbeb9c61" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #33</h4>         <b>Кількість ДТП:</b> 31<br>         <b>Головна причина:</b> порушення правил маневрування<br>         <b>Пікова година:</b> 23:00<br>     </div>     </div>`)[0];
+                popup_2c61be22827989089189ae7d56024e22.setContent(html_dafbe48ba3a1eec613b5c5d7bbeb9c61);
+            
+        
+
+        circle_marker_f933c60f376c979bcfaf23dec8136999.bindPopup(popup_2c61be22827989089189ae7d56024e22)
+        ;
+
+        
+    
+    
+            circle_marker_f933c60f376c979bcfaf23dec8136999.bindTooltip(
+                `<div>
+                     Зона #33: порушення правил маневрування
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d6ed69dfe2dd43cffbf8ff20114abefd = L.circleMarker(
+                [49.804139451612905, 23.996449193548386],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 51.5, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_4940881af1f575d6b59ae72b68f2a09d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_53c6db1bc309d736d42b7a35487cd3fa = $(`<div id="html_53c6db1bc309d736d42b7a35487cd3fa" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #34</h4>         <b>Кількість ДТП:</b> 31<br>         <b>Головна причина:</b> порушення правил маневрування<br>         <b>Пікова година:</b> 12:00<br>     </div>     </div>`)[0];
+                popup_4940881af1f575d6b59ae72b68f2a09d.setContent(html_53c6db1bc309d736d42b7a35487cd3fa);
+            
+        
+
+        circle_marker_d6ed69dfe2dd43cffbf8ff20114abefd.bindPopup(popup_4940881af1f575d6b59ae72b68f2a09d)
+        ;
+
+        
+    
+    
+            circle_marker_d6ed69dfe2dd43cffbf8ff20114abefd.bindTooltip(
+                `<div>
+                     Зона #34: порушення правил маневрування
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_047899fbda5b9702bf622d8fcdaebabf = L.circleMarker(
+                [49.85964166666667, 24.0192286],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 27.5, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_99c6c35c59ed35ed05418a57070373c1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_61d192d48c4dfd6b8adcca9dbd8f32e2 = $(`<div id="html_61d192d48c4dfd6b8adcca9dbd8f32e2" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #35</h4>         <b>Кількість ДТП:</b> 15<br>         <b>Головна причина:</b> порушення правил маневрування<br>         <b>Пікова година:</b> 17:00<br>     </div>     </div>`)[0];
+                popup_99c6c35c59ed35ed05418a57070373c1.setContent(html_61d192d48c4dfd6b8adcca9dbd8f32e2);
+            
+        
+
+        circle_marker_047899fbda5b9702bf622d8fcdaebabf.bindPopup(popup_99c6c35c59ed35ed05418a57070373c1)
+        ;
+
+        
+    
+    
+            circle_marker_047899fbda5b9702bf622d8fcdaebabf.bindTooltip(
+                `<div>
+                     Зона #35: порушення правил маневрування
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_872bed11953b0ccdd54932c4479ae136 = L.circleMarker(
+                [49.80321266666666, 24.005637952380955],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 36.5, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_e84f6d6a7b0546888ded2d35ebe49e56 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b77396e90585d5ace1941a93a0d6cf3d = $(`<div id="html_b77396e90585d5ace1941a93a0d6cf3d" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #36</h4>         <b>Кількість ДТП:</b> 21<br>         <b>Головна причина:</b> порушення правил маневрування<br>         <b>Пікова година:</b> 19:00<br>     </div>     </div>`)[0];
+                popup_e84f6d6a7b0546888ded2d35ebe49e56.setContent(html_b77396e90585d5ace1941a93a0d6cf3d);
+            
+        
+
+        circle_marker_872bed11953b0ccdd54932c4479ae136.bindPopup(popup_e84f6d6a7b0546888ded2d35ebe49e56)
+        ;
+
+        
+    
+    
+            circle_marker_872bed11953b0ccdd54932c4479ae136.bindTooltip(
+                `<div>
+                     Зона #36: порушення правил маневрування
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_44e6ffbffd14e4f31dec4ed73ce4ec5d = L.circleMarker(
+                [49.8330778, 23.98170477142857],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 57.5, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_b5f741400d13f3867bb5fcc9f6dd036c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_47cf8475f72f59865bf0f68257e195c8 = $(`<div id="html_47cf8475f72f59865bf0f68257e195c8" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #37</h4>         <b>Кількість ДТП:</b> 35<br>         <b>Головна причина:</b> порушення правил маневрування<br>         <b>Пікова година:</b> 7:00<br>     </div>     </div>`)[0];
+                popup_b5f741400d13f3867bb5fcc9f6dd036c.setContent(html_47cf8475f72f59865bf0f68257e195c8);
+            
+        
+
+        circle_marker_44e6ffbffd14e4f31dec4ed73ce4ec5d.bindPopup(popup_b5f741400d13f3867bb5fcc9f6dd036c)
+        ;
+
+        
+    
+    
+            circle_marker_44e6ffbffd14e4f31dec4ed73ce4ec5d.bindTooltip(
+                `<div>
+                     Зона #37: порушення правил маневрування
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_18cb625b25e786ef9d46f6c425f26f61 = L.circleMarker(
+                [49.82125740909091, 24.05534736363636],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 38.0, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_c733a7db027a8cee7f7864c7a961a885 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_09ff72ee1c19fc0e249bc8b7c7865ec6 = $(`<div id="html_09ff72ee1c19fc0e249bc8b7c7865ec6" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #38</h4>         <b>Кількість ДТП:</b> 22<br>         <b>Головна причина:</b> порушення правил маневрування<br>         <b>Пікова година:</b> 9:00<br>     </div>     </div>`)[0];
+                popup_c733a7db027a8cee7f7864c7a961a885.setContent(html_09ff72ee1c19fc0e249bc8b7c7865ec6);
+            
+        
+
+        circle_marker_18cb625b25e786ef9d46f6c425f26f61.bindPopup(popup_c733a7db027a8cee7f7864c7a961a885)
+        ;
+
+        
+    
+    
+            circle_marker_18cb625b25e786ef9d46f6c425f26f61.bindTooltip(
+                `<div>
+                     Зона #38: порушення правил маневрування
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_47011a101cfa9a299d8f156a012d8e5f = L.circleMarker(
+                [49.86828837649006, 23.952355840872432],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 56.0, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_c66bb8047496faa1f2fc49a8c8111e7b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f2dcc372b31fd5f8fc26f6187b43e9cc = $(`<div id="html_f2dcc372b31fd5f8fc26f6187b43e9cc" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #39</h4>         <b>Кількість ДТП:</b> 34<br>         <b>Головна причина:</b> порушення правил маневрування<br>         <b>Пікова година:</b> 16:00<br>     </div>     </div>`)[0];
+                popup_c66bb8047496faa1f2fc49a8c8111e7b.setContent(html_f2dcc372b31fd5f8fc26f6187b43e9cc);
+            
+        
+
+        circle_marker_47011a101cfa9a299d8f156a012d8e5f.bindPopup(popup_c66bb8047496faa1f2fc49a8c8111e7b)
+        ;
+
+        
+    
+    
+            circle_marker_47011a101cfa9a299d8f156a012d8e5f.bindTooltip(
+                `<div>
+                     Зона #39: порушення правил маневрування
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fd41b5a2658b4ce66929abd02c8ee7ce = L.circleMarker(
+                [49.81022130769231, 24.046033423076924],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 44.0, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_5a31a6a257fca514f9f2ead5b0abd4c5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_57c44e6fd0eaa4d4d64eb4bcd6fedff1 = $(`<div id="html_57c44e6fd0eaa4d4d64eb4bcd6fedff1" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #40</h4>         <b>Кількість ДТП:</b> 26<br>         <b>Головна причина:</b> порушення правил маневрування<br>         <b>Пікова година:</b> 16:00<br>     </div>     </div>`)[0];
+                popup_5a31a6a257fca514f9f2ead5b0abd4c5.setContent(html_57c44e6fd0eaa4d4d64eb4bcd6fedff1);
+            
+        
+
+        circle_marker_fd41b5a2658b4ce66929abd02c8ee7ce.bindPopup(popup_5a31a6a257fca514f9f2ead5b0abd4c5)
+        ;
+
+        
+    
+    
+            circle_marker_fd41b5a2658b4ce66929abd02c8ee7ce.bindTooltip(
+                `<div>
+                     Зона #40: порушення правил маневрування
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7caf45f09cd12c89865a66577ad75518 = L.circleMarker(
+                [49.8709908, 23.9449769],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 35.0, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_1e56447323499ea64401898087061abe = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_afb6fc66c312d60a40e015bef5560429 = $(`<div id="html_afb6fc66c312d60a40e015bef5560429" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #41</h4>         <b>Кількість ДТП:</b> 20<br>         <b>Головна причина:</b> порушення правил маневрування<br>         <b>Пікова година:</b> 16:00<br>     </div>     </div>`)[0];
+                popup_1e56447323499ea64401898087061abe.setContent(html_afb6fc66c312d60a40e015bef5560429);
+            
+        
+
+        circle_marker_7caf45f09cd12c89865a66577ad75518.bindPopup(popup_1e56447323499ea64401898087061abe)
+        ;
+
+        
+    
+    
+            circle_marker_7caf45f09cd12c89865a66577ad75518.bindTooltip(
+                `<div>
+                     Зона #41: порушення правил маневрування
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_aa517e02551836fe1f8c51c6e60dcdac = L.circleMarker(
+                [49.82876617647059, 23.990458411764706],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 56.0, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_98c61acb5d955986db325830442a7301 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ca001d7d496e92723fd98f8832dbc5ee = $(`<div id="html_ca001d7d496e92723fd98f8832dbc5ee" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #42</h4>         <b>Кількість ДТП:</b> 34<br>         <b>Головна причина:</b> порушення правил проїзду пішохідних переходів<br>         <b>Пікова година:</b> 18:00<br>     </div>     </div>`)[0];
+                popup_98c61acb5d955986db325830442a7301.setContent(html_ca001d7d496e92723fd98f8832dbc5ee);
+            
+        
+
+        circle_marker_aa517e02551836fe1f8c51c6e60dcdac.bindPopup(popup_98c61acb5d955986db325830442a7301)
+        ;
+
+        
+    
+    
+            circle_marker_aa517e02551836fe1f8c51c6e60dcdac.bindTooltip(
+                `<div>
+                     Зона #42: порушення правил проїзду пішохідних переходів
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cf05879ec205b49d6121645021df89c6 = L.circleMarker(
+                [49.823086733333334, 24.007001600000002],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50.0, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_e625a3d085d1c1688932f014bd371ba0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_bc0b9d807e105519422bdb3ff7cc5df0 = $(`<div id="html_bc0b9d807e105519422bdb3ff7cc5df0" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #43</h4>         <b>Кількість ДТП:</b> 30<br>         <b>Головна причина:</b> порушення правил проїзду пішохідних переходів<br>         <b>Пікова година:</b> 14:00<br>     </div>     </div>`)[0];
+                popup_e625a3d085d1c1688932f014bd371ba0.setContent(html_bc0b9d807e105519422bdb3ff7cc5df0);
+            
+        
+
+        circle_marker_cf05879ec205b49d6121645021df89c6.bindPopup(popup_e625a3d085d1c1688932f014bd371ba0)
+        ;
+
+        
+    
+    
+            circle_marker_cf05879ec205b49d6121645021df89c6.bindTooltip(
+                `<div>
+                     Зона #43: порушення правил проїзду пішохідних переходів
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_daed92aee1003bc7c808e8ae448f66ca = L.circleMarker(
+                [49.83986737037038, 24.049714740740743],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 45.5, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_616fcf356200b84e46841bbf12a923cb = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4ff4de4e316717f7b764f52d4f788e5c = $(`<div id="html_4ff4de4e316717f7b764f52d4f788e5c" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #44</h4>         <b>Кількість ДТП:</b> 27<br>         <b>Головна причина:</b> порушення правил маневрування<br>         <b>Пікова година:</b> 18:00<br>     </div>     </div>`)[0];
+                popup_616fcf356200b84e46841bbf12a923cb.setContent(html_4ff4de4e316717f7b764f52d4f788e5c);
+            
+        
+
+        circle_marker_daed92aee1003bc7c808e8ae448f66ca.bindPopup(popup_616fcf356200b84e46841bbf12a923cb)
+        ;
+
+        
+    
+    
+            circle_marker_daed92aee1003bc7c808e8ae448f66ca.bindTooltip(
+                `<div>
+                     Зона #44: порушення правил маневрування
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_907a11aea467fb5dbdb622d8b0a17755 = L.circleMarker(
+                [49.85343126666667, 24.0232299],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50.0, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_e2db5ee460b336e03db900ffa7cffca4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_68cfa179ad775aaf3f2c05d36db5a831 = $(`<div id="html_68cfa179ad775aaf3f2c05d36db5a831" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #45</h4>         <b>Кількість ДТП:</b> 30<br>         <b>Головна причина:</b> порушення правил маневрування<br>         <b>Пікова година:</b> 17:00<br>     </div>     </div>`)[0];
+                popup_e2db5ee460b336e03db900ffa7cffca4.setContent(html_68cfa179ad775aaf3f2c05d36db5a831);
+            
+        
+
+        circle_marker_907a11aea467fb5dbdb622d8b0a17755.bindPopup(popup_e2db5ee460b336e03db900ffa7cffca4)
+        ;
+
+        
+    
+    
+            circle_marker_907a11aea467fb5dbdb622d8b0a17755.bindTooltip(
+                `<div>
+                     Зона #45: порушення правил маневрування
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b36d5ad65074492cdf5daa2b6592ac83 = L.circleMarker(
+                [49.852284022679335, 24.032904575377504],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 32.0, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_31d5c4597ca50acac98fc6b45f3436bc = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c2fe87a8f024e8b64f3ddb705d0bc6d9 = $(`<div id="html_c2fe87a8f024e8b64f3ddb705d0bc6d9" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #46</h4>         <b>Кількість ДТП:</b> 18<br>         <b>Головна причина:</b> порушення правил маневрування<br>         <b>Пікова година:</b> 18:00<br>     </div>     </div>`)[0];
+                popup_31d5c4597ca50acac98fc6b45f3436bc.setContent(html_c2fe87a8f024e8b64f3ddb705d0bc6d9);
+            
+        
+
+        circle_marker_b36d5ad65074492cdf5daa2b6592ac83.bindPopup(popup_31d5c4597ca50acac98fc6b45f3436bc)
+        ;
+
+        
+    
+    
+            circle_marker_b36d5ad65074492cdf5daa2b6592ac83.bindTooltip(
+                `<div>
+                     Зона #46: порушення правил маневрування
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c1624832f782d2a5b308be48f7f0ae59 = L.circleMarker(
+                [49.80187132434088, 24.017913742905172],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 65.0, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_cc33433e6e3fef30b2d4e31bf22d3eff = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a3a278d3cb728b05d989b1bb08d74739 = $(`<div id="html_a3a278d3cb728b05d989b1bb08d74739" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #47</h4>         <b>Кількість ДТП:</b> 40<br>         <b>Головна причина:</b> порушення правил маневрування<br>         <b>Пікова година:</b> 20:00<br>     </div>     </div>`)[0];
+                popup_cc33433e6e3fef30b2d4e31bf22d3eff.setContent(html_a3a278d3cb728b05d989b1bb08d74739);
+            
+        
+
+        circle_marker_c1624832f782d2a5b308be48f7f0ae59.bindPopup(popup_cc33433e6e3fef30b2d4e31bf22d3eff)
+        ;
+
+        
+    
+    
+            circle_marker_c1624832f782d2a5b308be48f7f0ae59.bindTooltip(
+                `<div>
+                     Зона #47: порушення правил маневрування
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cf96471bd7abc0fe666bb59626f6d6b5 = L.circleMarker(
+                [49.865218666666664, 24.044671666666666],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 32.0, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_e9c23b890bd866da1d0b84553a1ba190 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ee97c3823f83b741b043afff5c917000 = $(`<div id="html_ee97c3823f83b741b043afff5c917000" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #48</h4>         <b>Кількість ДТП:</b> 18<br>         <b>Головна причина:</b> порушення правил маневрування<br>         <b>Пікова година:</b> 17:00<br>     </div>     </div>`)[0];
+                popup_e9c23b890bd866da1d0b84553a1ba190.setContent(html_ee97c3823f83b741b043afff5c917000);
+            
+        
+
+        circle_marker_cf96471bd7abc0fe666bb59626f6d6b5.bindPopup(popup_e9c23b890bd866da1d0b84553a1ba190)
+        ;
+
+        
+    
+    
+            circle_marker_cf96471bd7abc0fe666bb59626f6d6b5.bindTooltip(
+                `<div>
+                     Зона #48: порушення правил маневрування
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2cf8fd9b3dc2d2e303c4eeae4d3a5fbb = L.circleMarker(
+                [49.87071993333333, 24.033027866666668],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 27.5, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_e32b565d952ee0055b88b0039bd5d04d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_20fbfa3d36ac80b7361510e4b3d0dcfa = $(`<div id="html_20fbfa3d36ac80b7361510e4b3d0dcfa" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #49</h4>         <b>Кількість ДТП:</b> 15<br>         <b>Головна причина:</b> порушення правил маневрування<br>         <b>Пікова година:</b> 14:00<br>     </div>     </div>`)[0];
+                popup_e32b565d952ee0055b88b0039bd5d04d.setContent(html_20fbfa3d36ac80b7361510e4b3d0dcfa);
+            
+        
+
+        circle_marker_2cf8fd9b3dc2d2e303c4eeae4d3a5fbb.bindPopup(popup_e32b565d952ee0055b88b0039bd5d04d)
+        ;
+
+        
+    
+    
+            circle_marker_2cf8fd9b3dc2d2e303c4eeae4d3a5fbb.bindTooltip(
+                `<div>
+                     Зона #49: порушення правил маневрування
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a57d9212156678b7e5390f526e6dd940 = L.circleMarker(
+                [49.8335656, 24.034653475],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 65.0, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_3256d201561c89b9de236d3277d52149 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b0327e028be64571aa26c4a6590ef071 = $(`<div id="html_b0327e028be64571aa26c4a6590ef071" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #50</h4>         <b>Кількість ДТП:</b> 40<br>         <b>Головна причина:</b> порушення правил маневрування<br>         <b>Пікова година:</b> 13:00<br>     </div>     </div>`)[0];
+                popup_3256d201561c89b9de236d3277d52149.setContent(html_b0327e028be64571aa26c4a6590ef071);
+            
+        
+
+        circle_marker_a57d9212156678b7e5390f526e6dd940.bindPopup(popup_3256d201561c89b9de236d3277d52149)
+        ;
+
+        
+    
+    
+            circle_marker_a57d9212156678b7e5390f526e6dd940.bindTooltip(
+                `<div>
+                     Зона #50: порушення правил маневрування
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3a9fefb79dfe73cef3d4b793f95643a3 = L.circleMarker(
+                [49.8616795625, 24.0286908125],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 29.0, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_7ad1f3ae4ec075ad53076b3380007b2d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c2f271e7043cedcfe68682bde46b51af = $(`<div id="html_c2f271e7043cedcfe68682bde46b51af" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #51</h4>         <b>Кількість ДТП:</b> 16<br>         <b>Головна причина:</b> невиконання вимог сигналів регулювання<br>         <b>Пікова година:</b> 10:00<br>     </div>     </div>`)[0];
+                popup_7ad1f3ae4ec075ad53076b3380007b2d.setContent(html_c2f271e7043cedcfe68682bde46b51af);
+            
+        
+
+        circle_marker_3a9fefb79dfe73cef3d4b793f95643a3.bindPopup(popup_7ad1f3ae4ec075ad53076b3380007b2d)
+        ;
+
+        
+    
+    
+            circle_marker_3a9fefb79dfe73cef3d4b793f95643a3.bindTooltip(
+                `<div>
+                     Зона #51: невиконання вимог сигналів регулювання
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0a83db29cedbf9759f97f31c69cb4849 = L.circleMarker(
+                [49.83198942307692, 23.976195076923076],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 44.0, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_938720233813d942f5c4941b91aa6d18 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c985ba5ef77058c2ebf8b25abf4ddde4 = $(`<div id="html_c985ba5ef77058c2ebf8b25abf4ddde4" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #52</h4>         <b>Кількість ДТП:</b> 26<br>         <b>Головна причина:</b> порушення правил проїзду пішохідних переходів<br>         <b>Пікова година:</b> 8:00<br>     </div>     </div>`)[0];
+                popup_938720233813d942f5c4941b91aa6d18.setContent(html_c985ba5ef77058c2ebf8b25abf4ddde4);
+            
+        
+
+        circle_marker_0a83db29cedbf9759f97f31c69cb4849.bindPopup(popup_938720233813d942f5c4941b91aa6d18)
+        ;
+
+        
+    
+    
+            circle_marker_0a83db29cedbf9759f97f31c69cb4849.bindTooltip(
+                `<div>
+                     Зона #52: порушення правил проїзду пішохідних переходів
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_834e78cd604d7223aa2e62bb76d7026b = L.circleMarker(
+                [49.85102373913044, 23.991738304347827],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 39.5, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_60a66d5ef4f1a5cb3d18ba39f4305376 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_095b9513d9bfad531efd45d937d3d0b4 = $(`<div id="html_095b9513d9bfad531efd45d937d3d0b4" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #53</h4>         <b>Кількість ДТП:</b> 23<br>         <b>Головна причина:</b> порушення правил маневрування<br>         <b>Пікова година:</b> 16:00<br>     </div>     </div>`)[0];
+                popup_60a66d5ef4f1a5cb3d18ba39f4305376.setContent(html_095b9513d9bfad531efd45d937d3d0b4);
+            
+        
+
+        circle_marker_834e78cd604d7223aa2e62bb76d7026b.bindPopup(popup_60a66d5ef4f1a5cb3d18ba39f4305376)
+        ;
+
+        
+    
+    
+            circle_marker_834e78cd604d7223aa2e62bb76d7026b.bindTooltip(
+                `<div>
+                     Зона #53: порушення правил маневрування
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3d9336e5962823e52fd9fbb40660a2d2 = L.circleMarker(
+                [49.78375503636364, 24.01415688181818],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 38.0, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_0cc888afd658a2f50348c1f883a92de8 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7ccb986c2cef85ae0a200dded87d3568 = $(`<div id="html_7ccb986c2cef85ae0a200dded87d3568" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #54</h4>         <b>Кількість ДТП:</b> 22<br>         <b>Головна причина:</b> порушення правил маневрування<br>         <b>Пікова година:</b> 16:00<br>     </div>     </div>`)[0];
+                popup_0cc888afd658a2f50348c1f883a92de8.setContent(html_7ccb986c2cef85ae0a200dded87d3568);
+            
+        
+
+        circle_marker_3d9336e5962823e52fd9fbb40660a2d2.bindPopup(popup_0cc888afd658a2f50348c1f883a92de8)
+        ;
+
+        
+    
+    
+            circle_marker_3d9336e5962823e52fd9fbb40660a2d2.bindTooltip(
+                `<div>
+                     Зона #54: порушення правил маневрування
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5e6a19590a2ab1935f7210617ec36b4f = L.circleMarker(
+                [49.848904, 24.025651],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_6af6d0479b760acba6f38e8acaeac88a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c5cb0441cf05126fe1f435095ea4e3fe = $(`<div id="html_c5cb0441cf05126fe1f435095ea4e3fe" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #55</h4>         <b>Кількість ДТП:</b> 1<br>         <b>Головна причина:</b> перевищення безпечної швидкості<br>         <b>Пікова година:</b> 2:00<br>     </div>     </div>`)[0];
+                popup_6af6d0479b760acba6f38e8acaeac88a.setContent(html_c5cb0441cf05126fe1f435095ea4e3fe);
+            
+        
+
+        circle_marker_5e6a19590a2ab1935f7210617ec36b4f.bindPopup(popup_6af6d0479b760acba6f38e8acaeac88a)
+        ;
+
+        
+    
+    
+            circle_marker_5e6a19590a2ab1935f7210617ec36b4f.bindTooltip(
+                `<div>
+                     Зона #55: перевищення безпечної швидкості
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b75244633254ec02a0393ec37d14b25d = L.circleMarker(
+                [49.81139270833334, 23.989920916666666],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 41.0, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_11149c1e66ec8951c2e9fa376d129a56 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0e308ccb885b6325bd61f52783b548cd = $(`<div id="html_0e308ccb885b6325bd61f52783b548cd" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #56</h4>         <b>Кількість ДТП:</b> 24<br>         <b>Головна причина:</b> порушення правил маневрування<br>         <b>Пікова година:</b> 18:00<br>     </div>     </div>`)[0];
+                popup_11149c1e66ec8951c2e9fa376d129a56.setContent(html_0e308ccb885b6325bd61f52783b548cd);
+            
+        
+
+        circle_marker_b75244633254ec02a0393ec37d14b25d.bindPopup(popup_11149c1e66ec8951c2e9fa376d129a56)
+        ;
+
+        
+    
+    
+            circle_marker_b75244633254ec02a0393ec37d14b25d.bindTooltip(
+                `<div>
+                     Зона #56: порушення правил маневрування
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8174e3cf2f6137b1c9ac18d54a0fe08c = L.circleMarker(
+                [49.78555793333333, 24.05889553333333],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 27.5, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_e691d0a9a2bbdd8c34e1b24ba0b6046f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8435f5b6ab1cfb318063e8c0f09b0a87 = $(`<div id="html_8435f5b6ab1cfb318063e8c0f09b0a87" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #57</h4>         <b>Кількість ДТП:</b> 15<br>         <b>Головна причина:</b> порушення правил маневрування<br>         <b>Пікова година:</b> 22:00<br>     </div>     </div>`)[0];
+                popup_e691d0a9a2bbdd8c34e1b24ba0b6046f.setContent(html_8435f5b6ab1cfb318063e8c0f09b0a87);
+            
+        
+
+        circle_marker_8174e3cf2f6137b1c9ac18d54a0fe08c.bindPopup(popup_e691d0a9a2bbdd8c34e1b24ba0b6046f)
+        ;
+
+        
+    
+    
+            circle_marker_8174e3cf2f6137b1c9ac18d54a0fe08c.bindTooltip(
+                `<div>
+                     Зона #57: порушення правил маневрування
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9abf4b0fe62f5564bce01ceff8907900 = L.circleMarker(
+                [49.862942851851855, 24.017919555555554],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 45.5, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_b4541808164bd40da233381056155cf1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3b90e8f9a2d58248b924f64a4542eeae = $(`<div id="html_3b90e8f9a2d58248b924f64a4542eeae" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #58</h4>         <b>Кількість ДТП:</b> 27<br>         <b>Головна причина:</b> порушення правил маневрування<br>         <b>Пікова година:</b> 17:00<br>     </div>     </div>`)[0];
+                popup_b4541808164bd40da233381056155cf1.setContent(html_3b90e8f9a2d58248b924f64a4542eeae);
+            
+        
+
+        circle_marker_9abf4b0fe62f5564bce01ceff8907900.bindPopup(popup_b4541808164bd40da233381056155cf1)
+        ;
+
+        
+    
+    
+            circle_marker_9abf4b0fe62f5564bce01ceff8907900.bindTooltip(
+                `<div>
+                     Зона #58: порушення правил маневрування
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_abb3ea04fef9c9fd1e1d5b181d9fc977 = L.circleMarker(
+                [49.82565646153846, 23.989921076923075],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 44.0, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_9a994681a315f56d5b9c5526a0e7623e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ebdceee1569339e7b3ec93115c421094 = $(`<div id="html_ebdceee1569339e7b3ec93115c421094" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #59</h4>         <b>Кількість ДТП:</b> 26<br>         <b>Головна причина:</b> невиконання вимог сигналів регулювання<br>         <b>Пікова година:</b> 22:00<br>     </div>     </div>`)[0];
+                popup_9a994681a315f56d5b9c5526a0e7623e.setContent(html_ebdceee1569339e7b3ec93115c421094);
+            
+        
+
+        circle_marker_abb3ea04fef9c9fd1e1d5b181d9fc977.bindPopup(popup_9a994681a315f56d5b9c5526a0e7623e)
+        ;
+
+        
+    
+    
+            circle_marker_abb3ea04fef9c9fd1e1d5b181d9fc977.bindTooltip(
+                `<div>
+                     Зона #59: невиконання вимог сигналів регулювання
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cca72798155a842e5a4f3b9fea002a1e = L.circleMarker(
+                [49.81248005, 24.0458116],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 35.0, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_f4bd2124d976caf2ad46823c54a8fd46 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5699fcf4fa2bacf662fda306242b0153 = $(`<div id="html_5699fcf4fa2bacf662fda306242b0153" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #60</h4>         <b>Кількість ДТП:</b> 20<br>         <b>Головна причина:</b> порушення правил маневрування<br>         <b>Пікова година:</b> 19:00<br>     </div>     </div>`)[0];
+                popup_f4bd2124d976caf2ad46823c54a8fd46.setContent(html_5699fcf4fa2bacf662fda306242b0153);
+            
+        
+
+        circle_marker_cca72798155a842e5a4f3b9fea002a1e.bindPopup(popup_f4bd2124d976caf2ad46823c54a8fd46)
+        ;
+
+        
+    
+    
+            circle_marker_cca72798155a842e5a4f3b9fea002a1e.bindTooltip(
+                `<div>
+                     Зона #60: порушення правил маневрування
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0b45e443b62448605576d6a2f9da9f44 = L.circleMarker(
+                [49.82807005, 24.07121525],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 35.0, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_0d9164c50f6a54ad4dbf011606ada9f0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_786e45776685637a4d720391189ad35c = $(`<div id="html_786e45776685637a4d720391189ad35c" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #61</h4>         <b>Кількість ДТП:</b> 20<br>         <b>Головна причина:</b> порушення правил проїзду пішохідних переходів<br>         <b>Пікова година:</b> 13:00<br>     </div>     </div>`)[0];
+                popup_0d9164c50f6a54ad4dbf011606ada9f0.setContent(html_786e45776685637a4d720391189ad35c);
+            
+        
+
+        circle_marker_0b45e443b62448605576d6a2f9da9f44.bindPopup(popup_0d9164c50f6a54ad4dbf011606ada9f0)
+        ;
+
+        
+    
+    
+            circle_marker_0b45e443b62448605576d6a2f9da9f44.bindTooltip(
+                `<div>
+                     Зона #61: порушення правил проїзду пішохідних переходів
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b17b1d4763d6ab735b952f403ba34f62 = L.circleMarker(
+                [49.855627235294115, 24.07542311764706],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 30.5, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_465a913c6aaf270998359d7d77622f96 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4c1ae3127427d85a947995877cd95c0d = $(`<div id="html_4c1ae3127427d85a947995877cd95c0d" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #62</h4>         <b>Кількість ДТП:</b> 17<br>         <b>Головна причина:</b> порушення правил маневрування<br>         <b>Пікова година:</b> 11:00<br>     </div>     </div>`)[0];
+                popup_465a913c6aaf270998359d7d77622f96.setContent(html_4c1ae3127427d85a947995877cd95c0d);
+            
+        
+
+        circle_marker_b17b1d4763d6ab735b952f403ba34f62.bindPopup(popup_465a913c6aaf270998359d7d77622f96)
+        ;
+
+        
+    
+    
+            circle_marker_b17b1d4763d6ab735b952f403ba34f62.bindTooltip(
+                `<div>
+                     Зона #62: порушення правил маневрування
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fd19942ea187aa9292491d83e888814d = L.circleMarker(
+                [49.865007166666665, 24.050768166666664],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 32.0, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_c457cf450e7661560c7c62f8e53ae8c0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e111296313713831c861e26faea6bb06 = $(`<div id="html_e111296313713831c861e26faea6bb06" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #63</h4>         <b>Кількість ДТП:</b> 18<br>         <b>Головна причина:</b> порушення правил маневрування<br>         <b>Пікова година:</b> 6:00<br>     </div>     </div>`)[0];
+                popup_c457cf450e7661560c7c62f8e53ae8c0.setContent(html_e111296313713831c861e26faea6bb06);
+            
+        
+
+        circle_marker_fd19942ea187aa9292491d83e888814d.bindPopup(popup_c457cf450e7661560c7c62f8e53ae8c0)
+        ;
+
+        
+    
+    
+            circle_marker_fd19942ea187aa9292491d83e888814d.bindTooltip(
+                `<div>
+                     Зона #63: порушення правил маневрування
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8caab81c466baeda6f33b77bc2d17bb9 = L.circleMarker(
+                [49.838394, 24.055073375],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 29.0, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_62709563768c46fdabdb2cfad43a50c3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ef1120036087f82cd064a48b155a92ac = $(`<div id="html_ef1120036087f82cd064a48b155a92ac" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #64</h4>         <b>Кількість ДТП:</b> 16<br>         <b>Головна причина:</b> порушення правил маневрування<br>         <b>Пікова година:</b> 13:00<br>     </div>     </div>`)[0];
+                popup_62709563768c46fdabdb2cfad43a50c3.setContent(html_ef1120036087f82cd064a48b155a92ac);
+            
+        
+
+        circle_marker_8caab81c466baeda6f33b77bc2d17bb9.bindPopup(popup_62709563768c46fdabdb2cfad43a50c3)
+        ;
+
+        
+    
+    
+            circle_marker_8caab81c466baeda6f33b77bc2d17bb9.bindTooltip(
+                `<div>
+                     Зона #64: порушення правил маневрування
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_88a62dfdd3fe20edbc09017704fa4b6c = L.circleMarker(
+                [49.8379672, 24.023059866666664],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 27.5, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_3cb41839696fd7032ec3c1a84283862d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a0100cfdc4fffbefc9f204379a072e89 = $(`<div id="html_a0100cfdc4fffbefc9f204379a072e89" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #65</h4>         <b>Кількість ДТП:</b> 15<br>         <b>Головна причина:</b> порушення правил маневрування<br>         <b>Пікова година:</b> 19:00<br>     </div>     </div>`)[0];
+                popup_3cb41839696fd7032ec3c1a84283862d.setContent(html_a0100cfdc4fffbefc9f204379a072e89);
+            
+        
+
+        circle_marker_88a62dfdd3fe20edbc09017704fa4b6c.bindPopup(popup_3cb41839696fd7032ec3c1a84283862d)
+        ;
+
+        
+    
+    
+            circle_marker_88a62dfdd3fe20edbc09017704fa4b6c.bindTooltip(
+                `<div>
+                     Зона #65: порушення правил маневрування
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5b06a8eba2202b93ebd612756e110503 = L.circleMarker(
+                [49.82670333333333, 24.0104278],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 27.5, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_99e942df1c106fa6e6ba368e2528486c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_37a5b5f13511d490ebd9d10596ece2dc = $(`<div id="html_37a5b5f13511d490ebd9d10596ece2dc" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #66</h4>         <b>Кількість ДТП:</b> 15<br>         <b>Головна причина:</b> порушення правил маневрування<br>         <b>Пікова година:</b> 10:00<br>     </div>     </div>`)[0];
+                popup_99e942df1c106fa6e6ba368e2528486c.setContent(html_37a5b5f13511d490ebd9d10596ece2dc);
+            
+        
+
+        circle_marker_5b06a8eba2202b93ebd612756e110503.bindPopup(popup_99e942df1c106fa6e6ba368e2528486c)
+        ;
+
+        
+    
+    
+            circle_marker_5b06a8eba2202b93ebd612756e110503.bindTooltip(
+                `<div>
+                     Зона #66: порушення правил маневрування
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3554f18cc9366381062cf903c236c47d = L.circleMarker(
+                [49.87118433145982, 24.05397219614504],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 27.5, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_c06f33d8fc110a9e91cd69f8a59f8b5c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d4b53eecb8417bd436f7282759590b0f = $(`<div id="html_d4b53eecb8417bd436f7282759590b0f" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #67</h4>         <b>Кількість ДТП:</b> 15<br>         <b>Головна причина:</b> порушення правил маневрування<br>         <b>Пікова година:</b> 16:00<br>     </div>     </div>`)[0];
+                popup_c06f33d8fc110a9e91cd69f8a59f8b5c.setContent(html_d4b53eecb8417bd436f7282759590b0f);
+            
+        
+
+        circle_marker_3554f18cc9366381062cf903c236c47d.bindPopup(popup_c06f33d8fc110a9e91cd69f8a59f8b5c)
+        ;
+
+        
+    
+    
+            circle_marker_3554f18cc9366381062cf903c236c47d.bindTooltip(
+                `<div>
+                     Зона #67: порушення правил маневрування
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9dde5dff50c1c0628946672cc1bf4c20 = L.circleMarker(
+                [49.83435488888889, 23.990791722222223],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 32.0, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_a2bbb8222797b129d5f31f6bb784efab = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0a7725f7cb75d5780af5e52e30d11bd8 = $(`<div id="html_0a7725f7cb75d5780af5e52e30d11bd8" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #68</h4>         <b>Кількість ДТП:</b> 18<br>         <b>Головна причина:</b> порушення правил маневрування<br>         <b>Пікова година:</b> 12:00<br>     </div>     </div>`)[0];
+                popup_a2bbb8222797b129d5f31f6bb784efab.setContent(html_0a7725f7cb75d5780af5e52e30d11bd8);
+            
+        
+
+        circle_marker_9dde5dff50c1c0628946672cc1bf4c20.bindPopup(popup_a2bbb8222797b129d5f31f6bb784efab)
+        ;
+
+        
+    
+    
+            circle_marker_9dde5dff50c1c0628946672cc1bf4c20.bindTooltip(
+                `<div>
+                     Зона #68: порушення правил маневрування
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c773dda8f598451f51c4ec310d404ce1 = L.circleMarker(
+                [49.839360000000006, 23.995058933333333],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 27.5, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_8aa5e1dac9004155edc52dd8fbc69905 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_fc8a336a91fb83d80e25f9d35886febd = $(`<div id="html_fc8a336a91fb83d80e25f9d35886febd" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #69</h4>         <b>Кількість ДТП:</b> 15<br>         <b>Головна причина:</b> порушення правил маневрування<br>         <b>Пікова година:</b> 15:00<br>     </div>     </div>`)[0];
+                popup_8aa5e1dac9004155edc52dd8fbc69905.setContent(html_fc8a336a91fb83d80e25f9d35886febd);
+            
+        
+
+        circle_marker_c773dda8f598451f51c4ec310d404ce1.bindPopup(popup_8aa5e1dac9004155edc52dd8fbc69905)
+        ;
+
+        
+    
+    
+            circle_marker_c773dda8f598451f51c4ec310d404ce1.bindTooltip(
+                `<div>
+                     Зона #69: порушення правил маневрування
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bf0fa01ea608f8c43a1f3949a438701a = L.circleMarker(
+                [49.832533600000005, 24.011309933333333],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 27.5, "stroke": true, "weight": 3}
+            ).addTo(map_0e7b7db3345c16e2e2323a9b6575e03b);
+        
+    
+        var popup_7f33d902008b863e3b4f4febfe89859f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b1cd2f319c64812f8b4339f0f59653a8 = $(`<div id="html_b1cd2f319c64812f8b4339f0f59653a8" style="width: 100.0%; height: 100.0%;">     <div style="width: 200px">         <h4>Небезпечна зона #70</h4>         <b>Кількість ДТП:</b> 15<br>         <b>Головна причина:</b> Невідомо<br>         <b>Пікова година:</b> 19:00<br>     </div>     </div>`)[0];
+                popup_7f33d902008b863e3b4f4febfe89859f.setContent(html_b1cd2f319c64812f8b4339f0f59653a8);
+            
+        
+
+        circle_marker_bf0fa01ea608f8c43a1f3949a438701a.bindPopup(popup_7f33d902008b863e3b4f4febfe89859f)
+        ;
+
+        
+    
+    
+            circle_marker_bf0fa01ea608f8c43a1f3949a438701a.bindTooltip(
+                `<div>
+                     Зона #70: Невідомо
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>

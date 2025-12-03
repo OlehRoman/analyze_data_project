@@ -1,0 +1,36 @@
+name,title,description,datatype
+accidentDate,Дата скоєння ДТП,У форматі ISO 8601 (рррр-мм-дд),timestamp
+accidentTime,Час скоєння ДТП,null,text
+accidentDay,"День тижня, коли скоєно ДТП",null,text
+settlementType,"Тип населеного пункту, де трапилась пригода",null,text
+settlement,"Назва населеного пункту, де трапилась пригода",null,text
+district,Район населеного пункту,Якщо немає - N/A,text
+streetType,Тип вулиці,"Наприклад: провулок, вулиця, площа, проспект",text
+streetName,Назва вулиці,null,text
+houseNumber,Номер будинку,Додаткова прив'язка до місця пригоди,text
+locationComments,Примітка до місця ДТП,null,text
+accidentType,Вид пригоди,"Класифікація ДТП за видом: зіткнення, наїзд на перешкоду, наїзд на пішохода, тощо",text
+mainAccidentCause,Основна причина ДТП,null,text
+totalParticipantsAmount,Загальна кількість учасників ДТП,null,numeric
+injuryStatusParticipant1,Ушкодження учасника 1,"Наприклад: без ушкоджень, легко травмований",text
+injuryStatusParticipant2,Ушкодження учасника 2,"Наприклад: без ушкоджень, легко травмований",text
+injuryStatusParticipant3,Ушкодження учасника 3,"Наприклад: без ушкоджень, легко травмований",text
+injuryStatusParticipant4,Ушкодження учасника 4,"Наприклад: без ушкоджень, легко травмований",text
+injuryStatusParticipant5,Ушкодження учасника 5,"Наприклад: без ушкоджень, легко травмований",text
+injuryStatusParticipant6,Ушкодження учасника 6,"Наприклад: без ушкоджень, легко травмований",text
+injuryStatusParticipant7,Ушкодження учасника 7,"Наприклад: без ушкоджень, легко травмований",text
+injuryStatusParticipant8,Ушкодження учасника 8,"Наприклад: без ушкоджень, легко травмований",text
+injuryStatusParticipant9,Ушкодження учасника 9,"Наприклад: без ушкоджень, легко травмований",text
+injuryStatusParticipant10,Ушкодження учасника 10,"Наприклад: без ушкоджень, легко травмований",text
+injuryStatusParticipant11,Ушкодження учасника 11,"Наприклад: без ушкоджень, легко травмований",text
+injuryStatusParticipant12,Ушкодження учасника 12,"Наприклад: без ушкоджень, легко травмований",text
+injuryStatusParticipant13,Ушкодження учасника 13,"Наприклад: без ушкоджень, легко травмований",text
+injuryStatusParticipant14,Ушкодження учасника 14,"Наприклад: без ушкоджень, легко травмований",text
+injuryStatusParticipant15,Ушкодження учасника 15,"Наприклад: без ушкоджень, легко травмований",text
+injuryStatusParticipant16,Ушкодження учасника 16,"Наприклад: без ушкоджень, легко травмований",text
+injuryStatusParticipant17,Ушкодження учасника 17,"Наприклад: без ушкоджень, легко травмований",text
+injuryStatusParticipant18,Ушкодження учасника 18,"Наприклад: без ушкоджень, легко травмований",text
+injuryStatusParticipant19,Ушкодження учасника 19,"Наприклад: без ушкоджень, легко травмований",text
+injuryStatusParticipant20,Ушкодження учасника 20,"Наприклад: без ушкоджень, легко травмований",text
+latitude,Координати широти за даними GPS,null,numeric
+longitude,Координати довготи за даними GPS,null,numeric

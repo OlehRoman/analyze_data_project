@@ -1,0 +1,3632 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b40cf324b34485a809b18cbcfce8bc39 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b40cf324b34485a809b18cbcfce8bc39" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b40cf324b34485a809b18cbcfce8bc39 = L.map(
+                "map_b40cf324b34485a809b18cbcfce8bc39",
+                {
+                    center: [49.8397, 24.0297],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0cfb7bd4c8843e5f294c747d7c13191e = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_0cfb7bd4c8843e5f294c747d7c13191e.addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+            var circle_marker_126e85c134e6c3a97d835d9bef8ca8d4 = L.circleMarker(
+                [49.86299791304348, 24.01808895652174],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.71221532139178, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_829a9e0ff625a0732d8614207fa07dff = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_80b046d34a686aece9d93cc7de3340dd = $(`<div id="html_80b046d34a686aece9d93cc7de3340dd" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #0</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 23<br>         Час пік: 17:00     </div>     </div>`)[0];
+                popup_829a9e0ff625a0732d8614207fa07dff.setContent(html_80b046d34a686aece9d93cc7de3340dd);
+            
+        
+
+        circle_marker_126e85c134e6c3a97d835d9bef8ca8d4.bindPopup(popup_829a9e0ff625a0732d8614207fa07dff)
+        ;
+
+        
+    
+    
+            circle_marker_126e85c134e6c3a97d835d9bef8ca8d4.bindTooltip(
+                `<div>
+                     Маневрування: 23 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bba85b503733438c374ebd66b5568def = L.circleMarker(
+                [49.83786776704727, 24.005921001059104],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22.29884391401353, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_547ae46ad6c916f6094317fe6aaca773 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_1cc9db5af156411c7ae1a617743be54c = $(`<div id="html_1cc9db5af156411c7ae1a617743be54c" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #1</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 96<br>         Час пік: 20:00     </div>     </div>`)[0];
+                popup_547ae46ad6c916f6094317fe6aaca773.setContent(html_1cc9db5af156411c7ae1a617743be54c);
+            
+        
+
+        circle_marker_bba85b503733438c374ebd66b5568def.bindPopup(popup_547ae46ad6c916f6094317fe6aaca773)
+        ;
+
+        
+    
+    
+            circle_marker_bba85b503733438c374ebd66b5568def.bindTooltip(
+                `<div>
+                     Маневрування: 96 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6f0ef91231b2a5d825985f3d728c0c4b = L.circleMarker(
+                [49.829635503944424, 24.03187194171345],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.105442098464646, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_14707b3501180bc70b8dfe942cff5495 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_53fa2187455c0befe7091765b98b2cb1 = $(`<div id="html_53fa2187455c0befe7091765b98b2cb1" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #2</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 33<br>         Час пік: 14:00     </div>     </div>`)[0];
+                popup_14707b3501180bc70b8dfe942cff5495.setContent(html_53fa2187455c0befe7091765b98b2cb1);
+            
+        
+
+        circle_marker_6f0ef91231b2a5d825985f3d728c0c4b.bindPopup(popup_14707b3501180bc70b8dfe942cff5495)
+        ;
+
+        
+    
+    
+            circle_marker_6f0ef91231b2a5d825985f3d728c0c4b.bindTooltip(
+                `<div>
+                     Маневрування: 33 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e2b68832bb13b670db70ec181140a83a = L.circleMarker(
+                [49.799748739130436, 24.026683478260868],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.71221532139178, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_13c9652c1ad58efb6f6643dceac58eee = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_8afce797acc5ae754ba3898c2e4e7735 = $(`<div id="html_8afce797acc5ae754ba3898c2e4e7735" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #3</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 23<br>         Час пік: 14:00     </div>     </div>`)[0];
+                popup_13c9652c1ad58efb6f6643dceac58eee.setContent(html_8afce797acc5ae754ba3898c2e4e7735);
+            
+        
+
+        circle_marker_e2b68832bb13b670db70ec181140a83a.bindPopup(popup_13c9652c1ad58efb6f6643dceac58eee)
+        ;
+
+        
+    
+    
+            circle_marker_e2b68832bb13b670db70ec181140a83a.bindTooltip(
+                `<div>
+                     Маневрування: 23 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6d77f067ad21997041b74231872e3bb5 = L.circleMarker(
+                [49.862873997223886, 24.03133610077819],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.332853376224865, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_6274cf9be5fb57a1f50cb1546963fcda = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_9d699ac24ebfb0811737dc69c4d22be0 = $(`<div id="html_9d699ac24ebfb0811737dc69c4d22be0" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #4</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 16<br>         Час пік: 20:00     </div>     </div>`)[0];
+                popup_6274cf9be5fb57a1f50cb1546963fcda.setContent(html_9d699ac24ebfb0811737dc69c4d22be0);
+            
+        
+
+        circle_marker_6d77f067ad21997041b74231872e3bb5.bindPopup(popup_6274cf9be5fb57a1f50cb1546963fcda)
+        ;
+
+        
+    
+    
+            circle_marker_6d77f067ad21997041b74231872e3bb5.bindTooltip(
+                `<div>
+                     Маневрування: 16 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_26e9363c0dbb62a8d555c9b7d4c77c60 = L.circleMarker(
+                [49.812410863636366, 24.000191227272726],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.5419768637166, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_d809652909ed55aad787324c7e21c723 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_ed03731f3f8f35398310043717c63391 = $(`<div id="html_ed03731f3f8f35398310043717c63391" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #5</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 22<br>         Час пік: 12:00     </div>     </div>`)[0];
+                popup_d809652909ed55aad787324c7e21c723.setContent(html_ed03731f3f8f35398310043717c63391);
+            
+        
+
+        circle_marker_26e9363c0dbb62a8d555c9b7d4c77c60.bindPopup(popup_d809652909ed55aad787324c7e21c723)
+        ;
+
+        
+    
+    
+            circle_marker_26e9363c0dbb62a8d555c9b7d4c77c60.bindTooltip(
+                `<div>
+                     Маневрування: 22 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c5fe5e22d2911337fc543809ad260eca = L.circleMarker(
+                [49.830568944444444, 23.96861363888889],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.443671650576896, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_21c7ccbcd280418bcf8ac9d38d0f5d9c = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_8510b73e53bc40d2e61b53b952754837 = $(`<div id="html_8510b73e53bc40d2e61b53b952754837" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #6</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 36<br>         Час пік: 7:00     </div>     </div>`)[0];
+                popup_21c7ccbcd280418bcf8ac9d38d0f5d9c.setContent(html_8510b73e53bc40d2e61b53b952754837);
+            
+        
+
+        circle_marker_c5fe5e22d2911337fc543809ad260eca.bindPopup(popup_21c7ccbcd280418bcf8ac9d38d0f5d9c)
+        ;
+
+        
+    
+    
+            circle_marker_c5fe5e22d2911337fc543809ad260eca.bindTooltip(
+                `<div>
+                     Маневрування: 36 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2d2a5c37d951a9aa0f2334bafe6c02af = L.circleMarker(
+                [49.839832805691714, 24.03954057981527],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.3773782488884, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_ee6907802b48d6ca9332bd1a4d4cf02a = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_75a49491be6e29a72953d530b1344520 = $(`<div id="html_75a49491be6e29a72953d530b1344520" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #7</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 59<br>         Час пік: 10:00     </div>     </div>`)[0];
+                popup_ee6907802b48d6ca9332bd1a4d4cf02a.setContent(html_75a49491be6e29a72953d530b1344520);
+            
+        
+
+        circle_marker_2d2a5c37d951a9aa0f2334bafe6c02af.bindPopup(popup_ee6907802b48d6ca9332bd1a4d4cf02a)
+        ;
+
+        
+    
+    
+            circle_marker_2d2a5c37d951a9aa0f2334bafe6c02af.bindTooltip(
+                `<div>
+                     Маневрування: 59 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d2bfba19720898f319611b7f2403f040 = L.circleMarker(
+                [49.86975100089171, 24.057089230043665],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.5419768637166, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_9e17236b55b7b2c04a5256069b64fac9 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_a447d2990a930665317be7d02245758a = $(`<div id="html_a447d2990a930665317be7d02245758a" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #8</b><br>         <span style="color:red"><b>Швидкість</b></span><br>         ДТП: 22<br>         Час пік: 20:00     </div>     </div>`)[0];
+                popup_9e17236b55b7b2c04a5256069b64fac9.setContent(html_a447d2990a930665317be7d02245758a);
+            
+        
+
+        circle_marker_d2bfba19720898f319611b7f2403f040.bindPopup(popup_9e17236b55b7b2c04a5256069b64fac9)
+        ;
+
+        
+    
+    
+            circle_marker_d2bfba19720898f319611b7f2403f040.bindTooltip(
+                `<div>
+                     Швидкість: 22 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dbaa7e162d2094f70293f89a22b803ee = L.circleMarker(
+                [49.821921214285716, 24.075323285714287],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.83220080440884, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_319c064531e7a8d068d4d79519652dd2 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_8e532e005586a82704f34339477dce82 = $(`<div id="html_8e532e005586a82704f34339477dce82" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #9</b><br>         <span style="color:orange"><b>Перехрестя/Світлофор</b></span><br>         ДТП: 14<br>         Час пік: 11:00     </div>     </div>`)[0];
+                popup_319c064531e7a8d068d4d79519652dd2.setContent(html_8e532e005586a82704f34339477dce82);
+            
+        
+
+        circle_marker_dbaa7e162d2094f70293f89a22b803ee.bindPopup(popup_319c064531e7a8d068d4d79519652dd2)
+        ;
+
+        
+    
+    
+            circle_marker_dbaa7e162d2094f70293f89a22b803ee.bindTooltip(
+                `<div>
+                     Перехрестя/Світлофор: 14 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b8b9fcdb2d4fb83d889fdff3599bf037 = L.circleMarker(
+                [49.86014516666666, 24.02688141666667],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.875503299472804, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_90f141f09d386f714b406ccc92429e95 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_2fd85c2f92bdd2c5e6d8845e22ac8894 = $(`<div id="html_2fd85c2f92bdd2c5e6d8845e22ac8894" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #10</b><br>         <span style="color:orange"><b>Перехрестя/Світлофор</b></span><br>         ДТП: 24<br>         Час пік: 9:00     </div>     </div>`)[0];
+                popup_90f141f09d386f714b406ccc92429e95.setContent(html_2fd85c2f92bdd2c5e6d8845e22ac8894);
+            
+        
+
+        circle_marker_b8b9fcdb2d4fb83d889fdff3599bf037.bindPopup(popup_90f141f09d386f714b406ccc92429e95)
+        ;
+
+        
+    
+    
+            circle_marker_b8b9fcdb2d4fb83d889fdff3599bf037.bindTooltip(
+                `<div>
+                     Перехрестя/Світлофор: 24 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_342b4e35f1ca2a613c7510179c406450 = L.circleMarker(
+                [49.810096260869564, 24.00220295652174],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.71221532139178, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_b1a7004050102dbd8c27c0d1ae3c07b7 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_935ff365218a7686bb0f945aefc3bd55 = $(`<div id="html_935ff365218a7686bb0f945aefc3bd55" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #11</b><br>         <span style="color:purple"><b>Пішохід</b></span><br>         ДТП: 23<br>         Час пік: 11:00     </div>     </div>`)[0];
+                popup_b1a7004050102dbd8c27c0d1ae3c07b7.setContent(html_935ff365218a7686bb0f945aefc3bd55);
+            
+        
+
+        circle_marker_342b4e35f1ca2a613c7510179c406450.bindPopup(popup_b1a7004050102dbd8c27c0d1ae3c07b7)
+        ;
+
+        
+    
+    
+            circle_marker_342b4e35f1ca2a613c7510179c406450.bindTooltip(
+                `<div>
+                     Пішохід: 23 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2f562a93701ae3d0af78762ba188b847 = L.circleMarker(
+                [49.8436447529115, 24.02599690309726],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_60c691655677e4cc615195b007f26a3e = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_1dca60b5b9546b48239d063ec1d7da4d = $(`<div id="html_1dca60b5b9546b48239d063ec1d7da4d" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #12</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 215<br>         Час пік: 19:00     </div>     </div>`)[0];
+                popup_60c691655677e4cc615195b007f26a3e.setContent(html_1dca60b5b9546b48239d063ec1d7da4d);
+            
+        
+
+        circle_marker_2f562a93701ae3d0af78762ba188b847.bindPopup(popup_60c691655677e4cc615195b007f26a3e)
+        ;
+
+        
+    
+    
+            circle_marker_2f562a93701ae3d0af78762ba188b847.bindTooltip(
+                `<div>
+                     Маневрування: 215 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f1561217717c123ecdd274192f734195 = L.circleMarker(
+                [49.85704678125, 24.021624515625],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.697549079582547, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_a047670c801b1c2c1591d37981c66eee = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_a02ceca0640d49305b30c48b05401222 = $(`<div id="html_a02ceca0640d49305b30c48b05401222" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #13</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 64<br>         Час пік: 18:00     </div>     </div>`)[0];
+                popup_a047670c801b1c2c1591d37981c66eee.setContent(html_a02ceca0640d49305b30c48b05401222);
+            
+        
+
+        circle_marker_f1561217717c123ecdd274192f734195.bindPopup(popup_a047670c801b1c2c1591d37981c66eee)
+        ;
+
+        
+    
+    
+            circle_marker_f1561217717c123ecdd274192f734195.bindTooltip(
+                `<div>
+                     Маневрування: 64 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_764a11c512e61b0bfe08ba41e4fc6e01 = L.circleMarker(
+                [49.82422067553113, 23.977633619376796],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.854288266817232, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_9bbb6a939e8e36cd46e0be83bc387454 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_efa8ad6839441fb5c250fc6bf17d4370 = $(`<div id="html_efa8ad6839441fb5c250fc6bf17d4370" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #14</b><br>         <span style="color:orange"><b>Перехрестя/Світлофор</b></span><br>         ДТП: 40<br>         Час пік: 21:00     </div>     </div>`)[0];
+                popup_9bbb6a939e8e36cd46e0be83bc387454.setContent(html_efa8ad6839441fb5c250fc6bf17d4370);
+            
+        
+
+        circle_marker_764a11c512e61b0bfe08ba41e4fc6e01.bindPopup(popup_9bbb6a939e8e36cd46e0be83bc387454)
+        ;
+
+        
+    
+    
+            circle_marker_764a11c512e61b0bfe08ba41e4fc6e01.bindTooltip(
+                `<div>
+                     Перехрестя/Світлофор: 40 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_55e1c8a5d351af67758912e8f53461e2 = L.circleMarker(
+                [49.82123626315789, 23.988557368421056],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.982929094215963, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_b413f205092256a34bd4517547fde9ce = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_d535c994250ca3193afde8b46a858ee0 = $(`<div id="html_d535c994250ca3193afde8b46a858ee0" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #15</b><br>         <span style="color:orange"><b>Перехрестя/Світлофор</b></span><br>         ДТП: 19<br>         Час пік: 8:00     </div>     </div>`)[0];
+                popup_b413f205092256a34bd4517547fde9ce.setContent(html_d535c994250ca3193afde8b46a858ee0);
+            
+        
+
+        circle_marker_55e1c8a5d351af67758912e8f53461e2.bindPopup(popup_b413f205092256a34bd4517547fde9ce)
+        ;
+
+        
+    
+    
+            circle_marker_55e1c8a5d351af67758912e8f53461e2.bindTooltip(
+                `<div>
+                     Перехрестя/Світлофор: 19 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_90c7a5088fc67d1b58e7a139f1f0eebb = L.circleMarker(
+                [49.8447067, 23.9845519],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.591581091193483, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_ee23e0d82942459cf680a274c485dca1 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_16d461b13ef1da2e7759c97392df9b89 = $(`<div id="html_16d461b13ef1da2e7759c97392df9b89" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #16</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 10<br>         Час пік: 20:00     </div>     </div>`)[0];
+                popup_ee23e0d82942459cf680a274c485dca1.setContent(html_16d461b13ef1da2e7759c97392df9b89);
+            
+        
+
+        circle_marker_90c7a5088fc67d1b58e7a139f1f0eebb.bindPopup(popup_ee23e0d82942459cf680a274c485dca1)
+        ;
+
+        
+    
+    
+            circle_marker_90c7a5088fc67d1b58e7a139f1f0eebb.bindTooltip(
+                `<div>
+                     Маневрування: 10 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_613e19d1e807682ecb415bf4a75b8f24 = L.circleMarker(
+                [49.79864703726966, 24.049423168271186],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.80497487432571, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_dc2d78a80b26c005b57ba1a46c3b648a = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_56c458d94dcb45e2da42f5bd59bdf18c = $(`<div id="html_56c458d94dcb45e2da42f5bd59bdf18c" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #17</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 51<br>         Час пік: 14:00     </div>     </div>`)[0];
+                popup_dc2d78a80b26c005b57ba1a46c3b648a.setContent(html_56c458d94dcb45e2da42f5bd59bdf18c);
+            
+        
+
+        circle_marker_613e19d1e807682ecb415bf4a75b8f24.bindPopup(popup_dc2d78a80b26c005b57ba1a46c3b648a)
+        ;
+
+        
+    
+    
+            circle_marker_613e19d1e807682ecb415bf4a75b8f24.bindTooltip(
+                `<div>
+                     Маневрування: 51 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_268aeff7d80dcae84f99358010d60f9a = L.circleMarker(
+                [49.816999952380954, 23.98668304761905],
+                {"bubblingMouseEvents": true, "color": "lightgray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.364169813433264, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_3e089ff17f75cc684f056f2e4c3c8e2a = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_a8c28716bece51016066150646526a29 = $(`<div id="html_a8c28716bece51016066150646526a29" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #18</b><br>         <span style="color:lightgray"><b>Невідомо</b></span><br>         ДТП: 21<br>         Час пік: 17:00     </div>     </div>`)[0];
+                popup_3e089ff17f75cc684f056f2e4c3c8e2a.setContent(html_a8c28716bece51016066150646526a29);
+            
+        
+
+        circle_marker_268aeff7d80dcae84f99358010d60f9a.bindPopup(popup_3e089ff17f75cc684f056f2e4c3c8e2a)
+        ;
+
+        
+    
+    
+            circle_marker_268aeff7d80dcae84f99358010d60f9a.bindTooltip(
+                `<div>
+                     Невідомо: 21 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c6649a012e1ee0edfc7bde5d43e0fa16 = L.circleMarker(
+                [49.8326784, 24.03403493333333],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.090354888959125, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_4cf6ca9e783864e801c5f66c111ba4e4 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_dae3fe8c50fbd243cae8291f08d8a354 = $(`<div id="html_dae3fe8c50fbd243cae8291f08d8a354" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #19</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 15<br>         Час пік: 10:00     </div>     </div>`)[0];
+                popup_4cf6ca9e783864e801c5f66c111ba4e4.setContent(html_dae3fe8c50fbd243cae8291f08d8a354);
+            
+        
+
+        circle_marker_c6649a012e1ee0edfc7bde5d43e0fa16.bindPopup(popup_4cf6ca9e783864e801c5f66c111ba4e4)
+        ;
+
+        
+    
+    
+            circle_marker_c6649a012e1ee0edfc7bde5d43e0fa16.bindTooltip(
+                `<div>
+                     Маневрування: 15 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_510504ba7b10116622abf4aab2ffa4f7 = L.circleMarker(
+                [49.79617480571429, 24.054125917142855],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.33407575382444, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_489f32edc6258f2e8e57ceafb9e418f8 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_8cd60f6b7be8d1bef6df2fafc2e6d632 = $(`<div id="html_8cd60f6b7be8d1bef6df2fafc2e6d632" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #20</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 35<br>         Час пік: 7:00     </div>     </div>`)[0];
+                popup_489f32edc6258f2e8e57ceafb9e418f8.setContent(html_8cd60f6b7be8d1bef6df2fafc2e6d632);
+            
+        
+
+        circle_marker_510504ba7b10116622abf4aab2ffa4f7.bindPopup(popup_489f32edc6258f2e8e57ceafb9e418f8)
+        ;
+
+        
+    
+    
+            circle_marker_510504ba7b10116622abf4aab2ffa4f7.bindTooltip(
+                `<div>
+                     Маневрування: 35 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a619beb2e93884f18311446208f77e4f = L.circleMarker(
+                [49.8051064375, 23.98680390625],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.98603024586592, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_7b5f116f963a59edb5d46f853bf2e029 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_b8e74d2af826145b11117fac1fb6f4f2 = $(`<div id="html_b8e74d2af826145b11117fac1fb6f4f2" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #21</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 32<br>         Час пік: 12:00     </div>     </div>`)[0];
+                popup_7b5f116f963a59edb5d46f853bf2e029.setContent(html_b8e74d2af826145b11117fac1fb6f4f2);
+            
+        
+
+        circle_marker_a619beb2e93884f18311446208f77e4f.bindPopup(popup_7b5f116f963a59edb5d46f853bf2e029)
+        ;
+
+        
+    
+    
+            circle_marker_a619beb2e93884f18311446208f77e4f.bindTooltip(
+                `<div>
+                     Маневрування: 32 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_200419ce789165dcd4af0bf922c6994b = L.circleMarker(
+                [49.83945615384615, 23.994934923076922],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.556229318461034, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_47cfb036a9dcf1c09161a4d6fb7db74a = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_4c564ec5cf3c4bd46a10012fb0adf340 = $(`<div id="html_4c564ec5cf3c4bd46a10012fb0adf340" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #22</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 13<br>         Час пік: 15:00     </div>     </div>`)[0];
+                popup_47cfb036a9dcf1c09161a4d6fb7db74a.setContent(html_4c564ec5cf3c4bd46a10012fb0adf340);
+            
+        
+
+        circle_marker_200419ce789165dcd4af0bf922c6994b.bindPopup(popup_47cfb036a9dcf1c09161a4d6fb7db74a)
+        ;
+
+        
+    
+    
+            circle_marker_200419ce789165dcd4af0bf922c6994b.bindTooltip(
+                `<div>
+                     Маневрування: 13 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e88bf157e73f6c0c1fce2e93271a9898 = L.circleMarker(
+                [49.85042016129032, 24.024502838709676],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.862943611198908, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_afd79298b0b0a71a748bdea23051f120 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_3a4aa03368c8a9649fcd1261d0054f5b = $(`<div id="html_3a4aa03368c8a9649fcd1261d0054f5b" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #23</b><br>         <span style="color:red"><b>Швидкість</b></span><br>         ДТП: 31<br>         Час пік: 18:00     </div>     </div>`)[0];
+                popup_afd79298b0b0a71a748bdea23051f120.setContent(html_3a4aa03368c8a9649fcd1261d0054f5b);
+            
+        
+
+        circle_marker_e88bf157e73f6c0c1fce2e93271a9898.bindPopup(popup_afd79298b0b0a71a748bdea23051f120)
+        ;
+
+        
+    
+    
+            circle_marker_e88bf157e73f6c0c1fce2e93271a9898.bindTooltip(
+                `<div>
+                     Швидкість: 31 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_20d3b95b26ce73e26d4a2b27e277aa42 = L.circleMarker(
+                [49.8636352741244, 24.03377194411548],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.17808975089369, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_57bbce7727fa2e6b8928dc429faa8686 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_325c9845b7b73bcfdfa5cc4281541a81 = $(`<div id="html_325c9845b7b73bcfdfa5cc4281541a81" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #24</b><br>         <span style="color:orange"><b>Перехрестя/Світлофор</b></span><br>         ДТП: 20<br>         Час пік: 13:00     </div>     </div>`)[0];
+                popup_57bbce7727fa2e6b8928dc429faa8686.setContent(html_325c9845b7b73bcfdfa5cc4281541a81);
+            
+        
+
+        circle_marker_20d3b95b26ce73e26d4a2b27e277aa42.bindPopup(popup_57bbce7727fa2e6b8928dc429faa8686)
+        ;
+
+        
+    
+    
+            circle_marker_20d3b95b26ce73e26d4a2b27e277aa42.bindTooltip(
+                `<div>
+                     Перехрестя/Світлофор: 20 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_febb0be1ebb66b19f6f925f087a574f6 = L.circleMarker(
+                [49.823086733333334, 24.007001600000002],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.735948817940585, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_c9de58f27ffb8650fe36db5679d5730e = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_2fd51312e94b2ec998d38e93b3b4927b = $(`<div id="html_2fd51312e94b2ec998d38e93b3b4927b" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #25</b><br>         <span style="color:purple"><b>Пішохід</b></span><br>         ДТП: 30<br>         Час пік: 14:00     </div>     </div>`)[0];
+                popup_c9de58f27ffb8650fe36db5679d5730e.setContent(html_2fd51312e94b2ec998d38e93b3b4927b);
+            
+        
+
+        circle_marker_febb0be1ebb66b19f6f925f087a574f6.bindPopup(popup_c9de58f27ffb8650fe36db5679d5730e)
+        ;
+
+        
+    
+    
+            circle_marker_febb0be1ebb66b19f6f925f087a574f6.bindTooltip(
+                `<div>
+                     Пішохід: 30 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_24549899c560b507885f954478c68c88 = L.circleMarker(
+                [49.7984162625987, 24.017099764299903],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.982929094215963, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_463ba4315896d7aed5da5f6ebe2bc0df = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_84cf89097b7227fe5f6b37840af85db9 = $(`<div id="html_84cf89097b7227fe5f6b37840af85db9" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #26</b><br>         <span style="color:red"><b>Швидкість</b></span><br>         ДТП: 19<br>         Час пік: 17:00     </div>     </div>`)[0];
+                popup_463ba4315896d7aed5da5f6ebe2bc0df.setContent(html_84cf89097b7227fe5f6b37840af85db9);
+            
+        
+
+        circle_marker_24549899c560b507885f954478c68c88.bindPopup(popup_463ba4315896d7aed5da5f6ebe2bc0df)
+        ;
+
+        
+    
+    
+            circle_marker_24549899c560b507885f954478c68c88.bindTooltip(
+                `<div>
+                     Швидкість: 19 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_14a2f83a228b9d256316bcef778f8706 = L.circleMarker(
+                [49.7945197037037, 24.064265703703704],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.328818040700817, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_188d501ef4efda98ac0fc0d06d41ea80 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_28be7ca97fd64ff00c8bc01817ec9c6c = $(`<div id="html_28be7ca97fd64ff00c8bc01817ec9c6c" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #27</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 27<br>         Час пік: 22:00     </div>     </div>`)[0];
+                popup_188d501ef4efda98ac0fc0d06d41ea80.setContent(html_28be7ca97fd64ff00c8bc01817ec9c6c);
+            
+        
+
+        circle_marker_14a2f83a228b9d256316bcef778f8706.bindPopup(popup_188d501ef4efda98ac0fc0d06d41ea80)
+        ;
+
+        
+    
+    
+            circle_marker_14a2f83a228b9d256316bcef778f8706.bindTooltip(
+                `<div>
+                     Маневрування: 27 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_de24ca1c50b19bd0ec62931e0d4acaa3 = L.circleMarker(
+                [49.81880933333333, 23.98770025],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.259797429846147, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_f9af0e514255c8b178d92de06f680826 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_c1c35a34ec694bb6a1db75c4649eee9a = $(`<div id="html_c1c35a34ec694bb6a1db75c4649eee9a" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #28</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 12<br>         Час пік: 7:00     </div>     </div>`)[0];
+                popup_f9af0e514255c8b178d92de06f680826.setContent(html_c1c35a34ec694bb6a1db75c4649eee9a);
+            
+        
+
+        circle_marker_de24ca1c50b19bd0ec62931e0d4acaa3.bindPopup(popup_f9af0e514255c8b178d92de06f680826)
+        ;
+
+        
+    
+    
+            circle_marker_de24ca1c50b19bd0ec62931e0d4acaa3.bindTooltip(
+                `<div>
+                     Маневрування: 12 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ad206dcbb4fd17ab6cfea4914ab93cbc = L.circleMarker(
+                [49.813138884615384, 23.97786392307692],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.183347464017316, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_8d9f6937627c4cd93bbfe34920c5c5ea = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_055e68c3a159869c90e0d7bd9e269801 = $(`<div id="html_055e68c3a159869c90e0d7bd9e269801" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #29</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 26<br>         Час пік: 17:00     </div>     </div>`)[0];
+                popup_8d9f6937627c4cd93bbfe34920c5c5ea.setContent(html_055e68c3a159869c90e0d7bd9e269801);
+            
+        
+
+        circle_marker_ad206dcbb4fd17ab6cfea4914ab93cbc.bindPopup(popup_8d9f6937627c4cd93bbfe34920c5c5ea)
+        ;
+
+        
+    
+    
+            circle_marker_ad206dcbb4fd17ab6cfea4914ab93cbc.bindTooltip(
+                `<div>
+                     Маневрування: 26 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5cedd2545fdf619d32039d2b07f43235 = L.circleMarker(
+                [49.842802286443415, 24.01937147917781],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.31456558595638, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_b7a1d3b6dfa79fa0c70b6c8d1667f134 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_c0144b48abf48c1d67dd710f2ec8b729 = $(`<div id="html_c0144b48abf48c1d67dd710f2ec8b729" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #30</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 45<br>         Час пік: 12:00     </div>     </div>`)[0];
+                popup_b7a1d3b6dfa79fa0c70b6c8d1667f134.setContent(html_c0144b48abf48c1d67dd710f2ec8b729);
+            
+        
+
+        circle_marker_5cedd2545fdf619d32039d2b07f43235.bindPopup(popup_b7a1d3b6dfa79fa0c70b6c8d1667f134)
+        ;
+
+        
+    
+    
+            circle_marker_5cedd2545fdf619d32039d2b07f43235.bindTooltip(
+                `<div>
+                     Маневрування: 45 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_673b649b078ef9e589a0a28ecb870876 = L.circleMarker(
+                [49.83827218181818, 24.034979],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.5419768637166, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_8973d41f0ea7bbec6a505a9748c7f95e = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_a93278f28eb6cae41a3254fc9f0f5667 = $(`<div id="html_a93278f28eb6cae41a3254fc9f0f5667" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #31</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 22<br>         Час пік: 16:00     </div>     </div>`)[0];
+                popup_8973d41f0ea7bbec6a505a9748c7f95e.setContent(html_a93278f28eb6cae41a3254fc9f0f5667);
+            
+        
+
+        circle_marker_673b649b078ef9e589a0a28ecb870876.bindPopup(popup_8973d41f0ea7bbec6a505a9748c7f95e)
+        ;
+
+        
+    
+    
+            circle_marker_673b649b078ef9e589a0a28ecb870876.bindTooltip(
+                `<div>
+                     Маневрування: 22 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_852ebe089b2c23066b365d86b74924bc = L.circleMarker(
+                [49.80901316666667, 24.01165383333333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.259797429846147, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_d3de63c9f7273c72263becbcb5ead96c = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_f1f3d0f1b64c63e92ca958d068a319f5 = $(`<div id="html_f1f3d0f1b64c63e92ca958d068a319f5" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #32</b><br>         <span style="color:red"><b>Швидкість</b></span><br>         ДТП: 12<br>         Час пік: 13:00     </div>     </div>`)[0];
+                popup_d3de63c9f7273c72263becbcb5ead96c.setContent(html_f1f3d0f1b64c63e92ca958d068a319f5);
+            
+        
+
+        circle_marker_852ebe089b2c23066b365d86b74924bc.bindPopup(popup_d3de63c9f7273c72263becbcb5ead96c)
+        ;
+
+        
+    
+    
+            circle_marker_852ebe089b2c23066b365d86b74924bc.bindTooltip(
+                `<div>
+                     Швидкість: 12 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ee8307a88e24a89c45f0a4fd36d3f293 = L.circleMarker(
+                [49.820081249999994, 24.02022666666667],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.259797429846147, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_2b5f90be1412e0e3e7a91f61f33b2933 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_54424790d47609aefc9f95b5289e5b86 = $(`<div id="html_54424790d47609aefc9f95b5289e5b86" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #33</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 12<br>         Час пік: 18:00     </div>     </div>`)[0];
+                popup_2b5f90be1412e0e3e7a91f61f33b2933.setContent(html_54424790d47609aefc9f95b5289e5b86);
+            
+        
+
+        circle_marker_ee8307a88e24a89c45f0a4fd36d3f293.bindPopup(popup_2b5f90be1412e0e3e7a91f61f33b2933)
+        ;
+
+        
+    
+    
+            circle_marker_ee8307a88e24a89c45f0a4fd36d3f293.bindTooltip(
+                `<div>
+                     Маневрування: 12 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_81e2469e99d3829734ef0cef2a75cb14 = L.circleMarker(
+                [49.81643668421052, 24.002372368421053],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.982929094215963, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_78bfa420bb25b90348a9b7ce86e933a7 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_173e4f8c6a3034896971abc996e210a1 = $(`<div id="html_173e4f8c6a3034896971abc996e210a1" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #34</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 19<br>         Час пік: 14:00     </div>     </div>`)[0];
+                popup_78bfa420bb25b90348a9b7ce86e933a7.setContent(html_173e4f8c6a3034896971abc996e210a1);
+            
+        
+
+        circle_marker_81e2469e99d3829734ef0cef2a75cb14.bindPopup(popup_78bfa420bb25b90348a9b7ce86e933a7)
+        ;
+
+        
+    
+    
+            circle_marker_81e2469e99d3829734ef0cef2a75cb14.bindTooltip(
+                `<div>
+                     Маневрування: 19 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3277493344da3a015f78529c4476a4cc = L.circleMarker(
+                [49.82066188342353, 23.968901209081814],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.982929094215963, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_7ae86ca9d782987500ed699cd446c092 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_e0dabe08bfe42be5830bbd98622de2a6 = $(`<div id="html_e0dabe08bfe42be5830bbd98622de2a6" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #35</b><br>         <span style="color:orange"><b>Перехрестя/Світлофор</b></span><br>         ДТП: 19<br>         Час пік: 8:00     </div>     </div>`)[0];
+                popup_7ae86ca9d782987500ed699cd446c092.setContent(html_e0dabe08bfe42be5830bbd98622de2a6);
+            
+        
+
+        circle_marker_3277493344da3a015f78529c4476a4cc.bindPopup(popup_7ae86ca9d782987500ed699cd446c092)
+        ;
+
+        
+    
+    
+            circle_marker_3277493344da3a015f78529c4476a4cc.bindTooltip(
+                `<div>
+                     Перехрестя/Світлофор: 19 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_771ebe48521562ff3239dc4b292b5838 = L.circleMarker(
+                [49.8267273076923, 23.946993384615386],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.556229318461034, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_61db8a33c0d945c73543624c43986fcd = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_563a2280a1718c25e3001de0fadac654 = $(`<div id="html_563a2280a1718c25e3001de0fadac654" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #36</b><br>         <span style="color:orange"><b>Перехрестя/Світлофор</b></span><br>         ДТП: 13<br>         Час пік: 15:00     </div>     </div>`)[0];
+                popup_61db8a33c0d945c73543624c43986fcd.setContent(html_563a2280a1718c25e3001de0fadac654);
+            
+        
+
+        circle_marker_771ebe48521562ff3239dc4b292b5838.bindPopup(popup_61db8a33c0d945c73543624c43986fcd)
+        ;
+
+        
+    
+    
+            circle_marker_771ebe48521562ff3239dc4b292b5838.bindTooltip(
+                `<div>
+                     Перехрестя/Світлофор: 13 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1e5043dd39a88b14f5c21b6891f40b15 = L.circleMarker(
+                [49.80288679766001, 23.980674555872692],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.982929094215963, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_c79c06ac7312f44e3f1e6bba24ccb6e8 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_e4b0cc61f3ee90a7473462e1e2ffb086 = $(`<div id="html_e4b0cc61f3ee90a7473462e1e2ffb086" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #37</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 19<br>         Час пік: 22:00     </div>     </div>`)[0];
+                popup_c79c06ac7312f44e3f1e6bba24ccb6e8.setContent(html_e4b0cc61f3ee90a7473462e1e2ffb086);
+            
+        
+
+        circle_marker_1e5043dd39a88b14f5c21b6891f40b15.bindPopup(popup_c79c06ac7312f44e3f1e6bba24ccb6e8)
+        ;
+
+        
+    
+    
+            circle_marker_1e5043dd39a88b14f5c21b6891f40b15.bindTooltip(
+                `<div>
+                     Маневрування: 19 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e2101f624bcebb26bd967e9794322469 = L.circleMarker(
+                [49.874017798275865, 24.060877559310345],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.604789526648624, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_a4570a1dfadf41a0c9cb151f209af791 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_4bc597e87e67daa3b42c50a925845247 = $(`<div id="html_4bc597e87e67daa3b42c50a925845247" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #38</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 29<br>         Час пік: 21:00     </div>     </div>`)[0];
+                popup_a4570a1dfadf41a0c9cb151f209af791.setContent(html_4bc597e87e67daa3b42c50a925845247);
+            
+        
+
+        circle_marker_e2101f624bcebb26bd967e9794322469.bindPopup(popup_a4570a1dfadf41a0c9cb151f209af791)
+        ;
+
+        
+    
+    
+            circle_marker_e2101f624bcebb26bd967e9794322469.bindTooltip(
+                `<div>
+                     Маневрування: 29 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8e8eab481543a481c9252f59d9c99e60 = L.circleMarker(
+                [49.831173769230766, 23.971274692307695],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.556229318461034, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_28a2ecfffcac126eeaa8e0c4ecf15f50 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_15b6c2123ababa68b412bc9dcecb5d30 = $(`<div id="html_15b6c2123ababa68b412bc9dcecb5d30" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #39</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 13<br>         Час пік: 17:00     </div>     </div>`)[0];
+                popup_28a2ecfffcac126eeaa8e0c4ecf15f50.setContent(html_15b6c2123ababa68b412bc9dcecb5d30);
+            
+        
+
+        circle_marker_8e8eab481543a481c9252f59d9c99e60.bindPopup(popup_28a2ecfffcac126eeaa8e0c4ecf15f50)
+        ;
+
+        
+    
+    
+            circle_marker_8e8eab481543a481c9252f59d9c99e60.bindTooltip(
+                `<div>
+                     Маневрування: 13 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_48bc36fc591fad2957a041aa27ed7e59 = L.circleMarker(
+                [49.83568048717949, 23.996614102564102],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.755517816455743, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_f72b8a94e9f183159e8332a73b508521 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_e735559de2ef3b9bd7d8d76181c36081 = $(`<div id="html_e735559de2ef3b9bd7d8d76181c36081" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #40</b><br>         <span style="color:purple"><b>Пішохід</b></span><br>         ДТП: 39<br>         Час пік: 20:00     </div>     </div>`)[0];
+                popup_f72b8a94e9f183159e8332a73b508521.setContent(html_e735559de2ef3b9bd7d8d76181c36081);
+            
+        
+
+        circle_marker_48bc36fc591fad2957a041aa27ed7e59.bindPopup(popup_f72b8a94e9f183159e8332a73b508521)
+        ;
+
+        
+    
+    
+            circle_marker_48bc36fc591fad2957a041aa27ed7e59.bindTooltip(
+                `<div>
+                     Пішохід: 39 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4f2e00ffd72c965a45288375e6817766 = L.circleMarker(
+                [49.81241540085466, 24.01964745583943],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.591581091193483, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_668d4ef5dfc5a588849c0b2419621bec = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_cf85946ff243c0590092657d70e99e31 = $(`<div id="html_cf85946ff243c0590092657d70e99e31" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #41</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 10<br>         Час пік: 14:00     </div>     </div>`)[0];
+                popup_668d4ef5dfc5a588849c0b2419621bec.setContent(html_cf85946ff243c0590092657d70e99e31);
+            
+        
+
+        circle_marker_4f2e00ffd72c965a45288375e6817766.bindPopup(popup_668d4ef5dfc5a588849c0b2419621bec)
+        ;
+
+        
+    
+    
+            circle_marker_4f2e00ffd72c965a45288375e6817766.bindTooltip(
+                `<div>
+                     Маневрування: 10 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cb68de299deeaa107b862ecb30833961 = L.circleMarker(
+                [49.86501, 24.050788571428573],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.83220080440884, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_381ea57a18373453c94de0a17120e0e4 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_d19a420b2c06a0a08760b6ac6127bb82 = $(`<div id="html_d19a420b2c06a0a08760b6ac6127bb82" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #42</b><br>         <span style="color:purple"><b>Пішохід</b></span><br>         ДТП: 14<br>         Час пік: 6:00     </div>     </div>`)[0];
+                popup_381ea57a18373453c94de0a17120e0e4.setContent(html_d19a420b2c06a0a08760b6ac6127bb82);
+            
+        
+
+        circle_marker_cb68de299deeaa107b862ecb30833961.bindPopup(popup_381ea57a18373453c94de0a17120e0e4)
+        ;
+
+        
+    
+    
+            circle_marker_cb68de299deeaa107b862ecb30833961.bindTooltip(
+                `<div>
+                     Пішохід: 14 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c7e947bbfa6405e6e7a82f425f77c4d3 = L.circleMarker(
+                [49.8647274375, 24.0411365],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.332853376224865, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_6fdd6775d400c030805a2e4b78a4c6fa = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_7b44a253af5eb7df8744af5d0c971421 = $(`<div id="html_7b44a253af5eb7df8744af5d0c971421" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #43</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 16<br>         Час пік: 12:00     </div>     </div>`)[0];
+                popup_6fdd6775d400c030805a2e4b78a4c6fa.setContent(html_7b44a253af5eb7df8744af5d0c971421);
+            
+        
+
+        circle_marker_c7e947bbfa6405e6e7a82f425f77c4d3.bindPopup(popup_6fdd6775d400c030805a2e4b78a4c6fa)
+        ;
+
+        
+    
+    
+            circle_marker_c7e947bbfa6405e6e7a82f425f77c4d3.bindTooltip(
+                `<div>
+                     Маневрування: 16 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a5983e6afa1cb3926808533100b2ceab = L.circleMarker(
+                [49.79835469269999, 24.07119884994979],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.5419768637166, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_788444e5276d567d99034892ea11d746 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_eb2a0b481912362ba3520b8bef44dd84 = $(`<div id="html_eb2a0b481912362ba3520b8bef44dd84" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #44</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 22<br>         Час пік: 13:00     </div>     </div>`)[0];
+                popup_788444e5276d567d99034892ea11d746.setContent(html_eb2a0b481912362ba3520b8bef44dd84);
+            
+        
+
+        circle_marker_a5983e6afa1cb3926808533100b2ceab.bindPopup(popup_788444e5276d567d99034892ea11d746)
+        ;
+
+        
+    
+    
+            circle_marker_a5983e6afa1cb3926808533100b2ceab.bindTooltip(
+                `<div>
+                     Маневрування: 22 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3b546392e0dea035cde89da26592df75 = L.circleMarker(
+                [49.84300361538462, 24.015393384615383],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.556229318461034, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_1fdf324429eed49cab176f11233fbef1 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_e7e031ad0929410b1a6aa91ec1671337 = $(`<div id="html_e7e031ad0929410b1a6aa91ec1671337" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #45</b><br>         <span style="color:purple"><b>Пішохід</b></span><br>         ДТП: 13<br>         Час пік: 9:00     </div>     </div>`)[0];
+                popup_1fdf324429eed49cab176f11233fbef1.setContent(html_e7e031ad0929410b1a6aa91ec1671337);
+            
+        
+
+        circle_marker_3b546392e0dea035cde89da26592df75.bindPopup(popup_1fdf324429eed49cab176f11233fbef1)
+        ;
+
+        
+    
+    
+            circle_marker_3b546392e0dea035cde89da26592df75.bindTooltip(
+                `<div>
+                     Пішохід: 13 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_89aa159deacdd0ca26a4b33675c82d05 = L.circleMarker(
+                [49.81134147619047, 23.990185476190476],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.364169813433264, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_d3d6008b4066c764b8bbcf0eaff2df95 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_77b257ef103e163c84ed8ef75ef97931 = $(`<div id="html_77b257ef103e163c84ed8ef75ef97931" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #46</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 21<br>         Час пік: 19:00     </div>     </div>`)[0];
+                popup_d3d6008b4066c764b8bbcf0eaff2df95.setContent(html_77b257ef103e163c84ed8ef75ef97931);
+            
+        
+
+        circle_marker_89aa159deacdd0ca26a4b33675c82d05.bindPopup(popup_d3d6008b4066c764b8bbcf0eaff2df95)
+        ;
+
+        
+    
+    
+            circle_marker_89aa159deacdd0ca26a4b33675c82d05.bindTooltip(
+                `<div>
+                     Маневрування: 21 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5789625dd16b49c0a312a471c547cf4c = L.circleMarker(
+                [49.8443951, 24.031911561111112],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.777755916665761, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_2ea12a373fd618dbc9f042366a490f1d = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_86dbcb939ba0dc247f78994387659bbe = $(`<div id="html_86dbcb939ba0dc247f78994387659bbe" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #47</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 18<br>         Час пік: 18:00     </div>     </div>`)[0];
+                popup_2ea12a373fd618dbc9f042366a490f1d.setContent(html_86dbcb939ba0dc247f78994387659bbe);
+            
+        
+
+        circle_marker_5789625dd16b49c0a312a471c547cf4c.bindPopup(popup_2ea12a373fd618dbc9f042366a490f1d)
+        ;
+
+        
+    
+    
+            circle_marker_5789625dd16b49c0a312a471c547cf4c.bindTooltip(
+                `<div>
+                     Маневрування: 18 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_df607b715d65a1eb5ae8a82f9f0db4f6 = L.circleMarker(
+                [49.785738333333335, 24.0590035],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.259797429846147, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_9529af047a091b35204cd538cf5c3f48 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_5e699d052c38501cb0b6a42bd2e0d0bd = $(`<div id="html_5e699d052c38501cb0b6a42bd2e0d0bd" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #48</b><br>         <span style="color:purple"><b>Пішохід</b></span><br>         ДТП: 12<br>         Час пік: 22:00     </div>     </div>`)[0];
+                popup_9529af047a091b35204cd538cf5c3f48.setContent(html_5e699d052c38501cb0b6a42bd2e0d0bd);
+            
+        
+
+        circle_marker_df607b715d65a1eb5ae8a82f9f0db4f6.bindPopup(popup_9529af047a091b35204cd538cf5c3f48)
+        ;
+
+        
+    
+    
+            circle_marker_df607b715d65a1eb5ae8a82f9f0db4f6.bindTooltip(
+                `<div>
+                     Пішохід: 12 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6a80757790036b95275005d7a71a33b7 = L.circleMarker(
+                [49.8242368, 23.932510266666668],
+                {"bubblingMouseEvents": true, "color": "cadetblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cadetblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.090354888959125, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_df6398e7bb6f4c98336b36b5b4fb7f87 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_b0e0506b2f73a5ffc72914dab5a27a7a = $(`<div id="html_b0e0506b2f73a5ffc72914dab5a27a7a" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #49</b><br>         <span style="color:cadetblue"><b>Дистанція</b></span><br>         ДТП: 15<br>         Час пік: 16:00     </div>     </div>`)[0];
+                popup_df6398e7bb6f4c98336b36b5b4fb7f87.setContent(html_b0e0506b2f73a5ffc72914dab5a27a7a);
+            
+        
+
+        circle_marker_6a80757790036b95275005d7a71a33b7.bindPopup(popup_df6398e7bb6f4c98336b36b5b4fb7f87)
+        ;
+
+        
+    
+    
+            circle_marker_6a80757790036b95275005d7a71a33b7.bindTooltip(
+                `<div>
+                     Дистанція: 15 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_504a01e224c63ada7b8e57ce0df6d350 = L.circleMarker(
+                [49.841573, 24.015772727272726],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.939626599152001, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_43bbf2ddac2e566e23f368cbedc5ad0e = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_29f714a2ba84c13b361561ebfa39b38b = $(`<div id="html_29f714a2ba84c13b361561ebfa39b38b" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #50</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 11<br>         Час пік: 7:00     </div>     </div>`)[0];
+                popup_43bbf2ddac2e566e23f368cbedc5ad0e.setContent(html_29f714a2ba84c13b361561ebfa39b38b);
+            
+        
+
+        circle_marker_504a01e224c63ada7b8e57ce0df6d350.bindPopup(popup_43bbf2ddac2e566e23f368cbedc5ad0e)
+        ;
+
+        
+    
+    
+            circle_marker_504a01e224c63ada7b8e57ce0df6d350.bindTooltip(
+                `<div>
+                     Маневрування: 11 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cf9318272e39c808aee10f031a2a9e8f = L.circleMarker(
+                [49.808051166666665, 24.019095833333335],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.259797429846147, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_7fc0ac48081e4660d728a097f9d3ab79 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_ed14b6fbd3e627b54e16924cd073ef1f = $(`<div id="html_ed14b6fbd3e627b54e16924cd073ef1f" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #51</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 12<br>         Час пік: 22:00     </div>     </div>`)[0];
+                popup_7fc0ac48081e4660d728a097f9d3ab79.setContent(html_ed14b6fbd3e627b54e16924cd073ef1f);
+            
+        
+
+        circle_marker_cf9318272e39c808aee10f031a2a9e8f.bindPopup(popup_7fc0ac48081e4660d728a097f9d3ab79)
+        ;
+
+        
+    
+    
+            circle_marker_cf9318272e39c808aee10f031a2a9e8f.bindTooltip(
+                `<div>
+                     Маневрування: 12 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cf19cceba4a2c8315f3f8b246b48cd64 = L.circleMarker(
+                [49.82909019230769, 23.959681653846154],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.183347464017316, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_16bde5fe7b4fbe8ab09606ee508f03fd = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_101ae0aebb1636f33aebb7c7377d19fd = $(`<div id="html_101ae0aebb1636f33aebb7c7377d19fd" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #52</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 26<br>         Час пік: 20:00     </div>     </div>`)[0];
+                popup_16bde5fe7b4fbe8ab09606ee508f03fd.setContent(html_101ae0aebb1636f33aebb7c7377d19fd);
+            
+        
+
+        circle_marker_cf19cceba4a2c8315f3f8b246b48cd64.bindPopup(popup_16bde5fe7b4fbe8ab09606ee508f03fd)
+        ;
+
+        
+    
+    
+            circle_marker_cf19cceba4a2c8315f3f8b246b48cd64.bindTooltip(
+                `<div>
+                     Маневрування: 26 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5be88b01683d08b41155975cdf79624d = L.circleMarker(
+                [49.80311392307692, 24.006064153846157],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.556229318461034, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_2a1882d04dc775b0db966381b7e8e54e = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_44be54b23c2e4bef66ffb4679272f7d0 = $(`<div id="html_44be54b23c2e4bef66ffb4679272f7d0" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #53</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 13<br>         Час пік: 23:00     </div>     </div>`)[0];
+                popup_2a1882d04dc775b0db966381b7e8e54e.setContent(html_44be54b23c2e4bef66ffb4679272f7d0);
+            
+        
+
+        circle_marker_5be88b01683d08b41155975cdf79624d.bindPopup(popup_2a1882d04dc775b0db966381b7e8e54e)
+        ;
+
+        
+    
+    
+            circle_marker_5be88b01683d08b41155975cdf79624d.bindTooltip(
+                `<div>
+                     Маневрування: 13 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_029b6d5b5ba85e284e441838facaa59b = L.circleMarker(
+                [49.83336833333333, 23.98295561111111],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.777755916665761, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_031f627e7ae40c075ad5e30fd2434422 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_3202833d38d83c8ef05b093e3d3ef9d0 = $(`<div id="html_3202833d38d83c8ef05b093e3d3ef9d0" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #54</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 18<br>         Час пік: 13:00     </div>     </div>`)[0];
+                popup_031f627e7ae40c075ad5e30fd2434422.setContent(html_3202833d38d83c8ef05b093e3d3ef9d0);
+            
+        
+
+        circle_marker_029b6d5b5ba85e284e441838facaa59b.bindPopup(popup_031f627e7ae40c075ad5e30fd2434422)
+        ;
+
+        
+    
+    
+            circle_marker_029b6d5b5ba85e284e441838facaa59b.bindTooltip(
+                `<div>
+                     Маневрування: 18 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_50b4a901068da832761a4c8ee3edaa43 = L.circleMarker(
+                [49.82121663157895, 24.055376],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.982929094215963, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_03a639aeafea1da2da460a4be4a48a6f = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_5e166f5e1c9f049b346ce69787e51c7c = $(`<div id="html_5e166f5e1c9f049b346ce69787e51c7c" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #55</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 19<br>         Час пік: 9:00     </div>     </div>`)[0];
+                popup_03a639aeafea1da2da460a4be4a48a6f.setContent(html_5e166f5e1c9f049b346ce69787e51c7c);
+            
+        
+
+        circle_marker_50b4a901068da832761a4c8ee3edaa43.bindPopup(popup_03a639aeafea1da2da460a4be4a48a6f)
+        ;
+
+        
+    
+    
+            circle_marker_50b4a901068da832761a4c8ee3edaa43.bindTooltip(
+                `<div>
+                     Маневрування: 19 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_be4557a710999df064725fddbec65ca9 = L.circleMarker(
+                [49.86820888573793, 23.952207092487953],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.4691833199459, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_25ddd2b4ddcda02eeef2915b8b1d7c70 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_8230c78008681037a4501ac52a98e1e1 = $(`<div id="html_8230c78008681037a4501ac52a98e1e1" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #56</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 28<br>         Час пік: 19:00     </div>     </div>`)[0];
+                popup_25ddd2b4ddcda02eeef2915b8b1d7c70.setContent(html_8230c78008681037a4501ac52a98e1e1);
+            
+        
+
+        circle_marker_be4557a710999df064725fddbec65ca9.bindPopup(popup_25ddd2b4ddcda02eeef2915b8b1d7c70)
+        ;
+
+        
+    
+    
+            circle_marker_be4557a710999df064725fddbec65ca9.bindTooltip(
+                `<div>
+                     Маневрування: 28 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e4b706a23dde5094aecc5f52e40b59ca = L.circleMarker(
+                [49.839516985284405, 23.97785915935219],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.939626599152001, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_099e24110ea09169f0ac8cd74624a504 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_3e92549ba048718476474007913c2a46 = $(`<div id="html_3e92549ba048718476474007913c2a46" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #57</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 11<br>         Час пік: 13:00     </div>     </div>`)[0];
+                popup_099e24110ea09169f0ac8cd74624a504.setContent(html_3e92549ba048718476474007913c2a46);
+            
+        
+
+        circle_marker_e4b706a23dde5094aecc5f52e40b59ca.bindPopup(popup_099e24110ea09169f0ac8cd74624a504)
+        ;
+
+        
+    
+    
+            circle_marker_e4b706a23dde5094aecc5f52e40b59ca.bindTooltip(
+                `<div>
+                     Маневрування: 11 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c4c2dbd09340a0223799683a27659b0c = L.circleMarker(
+                [49.803894647058826, 23.997130823529414],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.561487031584658, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_a674d476a1cd6ab7e0efa85609ddc58c = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_879998cf5c69c767ef7c5e9d379c5569 = $(`<div id="html_879998cf5c69c767ef7c5e9d379c5569" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #58</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 17<br>         Час пік: 12:00     </div>     </div>`)[0];
+                popup_a674d476a1cd6ab7e0efa85609ddc58c.setContent(html_879998cf5c69c767ef7c5e9d379c5569);
+            
+        
+
+        circle_marker_c4c2dbd09340a0223799683a27659b0c.bindPopup(popup_a674d476a1cd6ab7e0efa85609ddc58c)
+        ;
+
+        
+    
+    
+            circle_marker_c4c2dbd09340a0223799683a27659b0c.bindTooltip(
+                `<div>
+                     Маневрування: 17 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f805c69b57220efc8a1432bd34e43ebb = L.circleMarker(
+                [49.853334548387096, 24.02323035483871],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.862943611198908, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_18a4394ee77364f4b95942e0ea7da228 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_e7a588aeb310bc1e2936c07be24ffa10 = $(`<div id="html_e7a588aeb310bc1e2936c07be24ffa10" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #59</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 31<br>         Час пік: 17:00     </div>     </div>`)[0];
+                popup_18a4394ee77364f4b95942e0ea7da228.setContent(html_e7a588aeb310bc1e2936c07be24ffa10);
+            
+        
+
+        circle_marker_f805c69b57220efc8a1432bd34e43ebb.bindPopup(popup_18a4394ee77364f4b95942e0ea7da228)
+        ;
+
+        
+    
+    
+            circle_marker_f805c69b57220efc8a1432bd34e43ebb.bindTooltip(
+                `<div>
+                     Маневрування: 31 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7c85bcc76fc2c17d11d48349bd8b5ac9 = L.circleMarker(
+                [49.81227703846154, 23.983325461538463],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.183347464017316, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_ac4d82374e8358c8177124eb5d0de5ce = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_58fac65cd4c9a9b0dd1baf5ec289717b = $(`<div id="html_58fac65cd4c9a9b0dd1baf5ec289717b" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #60</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 26<br>         Час пік: 10:00     </div>     </div>`)[0];
+                popup_ac4d82374e8358c8177124eb5d0de5ce.setContent(html_58fac65cd4c9a9b0dd1baf5ec289717b);
+            
+        
+
+        circle_marker_7c85bcc76fc2c17d11d48349bd8b5ac9.bindPopup(popup_ac4d82374e8358c8177124eb5d0de5ce)
+        ;
+
+        
+    
+    
+            circle_marker_7c85bcc76fc2c17d11d48349bd8b5ac9.bindTooltip(
+                `<div>
+                     Маневрування: 26 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_58ad68104cefcef3994d4ca03e905b1e = L.circleMarker(
+                [49.83944445454545, 24.029893727272725],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.5419768637166, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_5f3cf23026dab5081e9a43fff531bfd7 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_ea5ddddeaa9dfa574b627d1688481835 = $(`<div id="html_ea5ddddeaa9dfa574b627d1688481835" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #61</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 22<br>         Час пік: 13:00     </div>     </div>`)[0];
+                popup_5f3cf23026dab5081e9a43fff531bfd7.setContent(html_ea5ddddeaa9dfa574b627d1688481835);
+            
+        
+
+        circle_marker_58ad68104cefcef3994d4ca03e905b1e.bindPopup(popup_5f3cf23026dab5081e9a43fff531bfd7)
+        ;
+
+        
+    
+    
+            circle_marker_58ad68104cefcef3994d4ca03e905b1e.bindTooltip(
+                `<div>
+                     Маневрування: 22 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ef91ec03b304cdd57948d02a227d1418 = L.circleMarker(
+                [49.87100968421053, 23.945065315789474],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.982929094215963, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_94a41c357836ebed76eb69f489b3c38e = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_4b6f85086160d9b2f2d9bdd2171a22e7 = $(`<div id="html_4b6f85086160d9b2f2d9bdd2171a22e7" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #62</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 19<br>         Час пік: 16:00     </div>     </div>`)[0];
+                popup_94a41c357836ebed76eb69f489b3c38e.setContent(html_4b6f85086160d9b2f2d9bdd2171a22e7);
+            
+        
+
+        circle_marker_ef91ec03b304cdd57948d02a227d1418.bindPopup(popup_94a41c357836ebed76eb69f489b3c38e)
+        ;
+
+        
+    
+    
+            circle_marker_ef91ec03b304cdd57948d02a227d1418.bindTooltip(
+                `<div>
+                     Маневрування: 19 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dd41e3244364f9fd322d4e745897ecbe = L.circleMarker(
+                [49.83986737037038, 24.049714740740743],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.328818040700817, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_8292b6ecbc56e48399b5756f8ff7290f = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_53ae24ef2a06c87d24295f8b95ccd161 = $(`<div id="html_53ae24ef2a06c87d24295f8b95ccd161" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #63</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 27<br>         Час пік: 18:00     </div>     </div>`)[0];
+                popup_8292b6ecbc56e48399b5756f8ff7290f.setContent(html_53ae24ef2a06c87d24295f8b95ccd161);
+            
+        
+
+        circle_marker_dd41e3244364f9fd322d4e745897ecbe.bindPopup(popup_8292b6ecbc56e48399b5756f8ff7290f)
+        ;
+
+        
+    
+    
+            circle_marker_dd41e3244364f9fd322d4e745897ecbe.bindTooltip(
+                `<div>
+                     Маневрування: 27 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d2837fb1c62a3fc936bd7162b4d8dbeb = L.circleMarker(
+                [49.80190454545455, 24.06616681818182],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.939626599152001, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_0347ed676ed6e50a5fb1ed2f82d55749 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_96ac5e2910f5be1e2736586ad6fadfeb = $(`<div id="html_96ac5e2910f5be1e2736586ad6fadfeb" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #64</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 11<br>         Час пік: 20:00     </div>     </div>`)[0];
+                popup_0347ed676ed6e50a5fb1ed2f82d55749.setContent(html_96ac5e2910f5be1e2736586ad6fadfeb);
+            
+        
+
+        circle_marker_d2837fb1c62a3fc936bd7162b4d8dbeb.bindPopup(popup_0347ed676ed6e50a5fb1ed2f82d55749)
+        ;
+
+        
+    
+    
+            circle_marker_d2837fb1c62a3fc936bd7162b4d8dbeb.bindTooltip(
+                `<div>
+                     Маневрування: 11 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a6c7ff240e40ca49f4ce960d81abebd5 = L.circleMarker(
+                [49.81253528571429, 24.045812857142856],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.364169813433264, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_cffbd1b3cf482142832e94a430125274 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_fc6d55b7337b9d0f8336826570709f53 = $(`<div id="html_fc6d55b7337b9d0f8336826570709f53" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #65</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 21<br>         Час пік: 19:00     </div>     </div>`)[0];
+                popup_cffbd1b3cf482142832e94a430125274.setContent(html_fc6d55b7337b9d0f8336826570709f53);
+            
+        
+
+        circle_marker_a6c7ff240e40ca49f4ce960d81abebd5.bindPopup(popup_cffbd1b3cf482142832e94a430125274)
+        ;
+
+        
+    
+    
+            circle_marker_a6c7ff240e40ca49f4ce960d81abebd5.bindTooltip(
+                `<div>
+                     Маневрування: 21 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e4780ace56c905583e9561402b36680b = L.circleMarker(
+                [49.834593142857145, 23.990815285714287],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.83220080440884, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_24c49958fc1a0cc746cdcf22fef866be = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_0532b5caf546e30defce4177ec72b0cf = $(`<div id="html_0532b5caf546e30defce4177ec72b0cf" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #66</b><br>         <span style="color:red"><b>Швидкість</b></span><br>         ДТП: 14<br>         Час пік: 12:00     </div>     </div>`)[0];
+                popup_24c49958fc1a0cc746cdcf22fef866be.setContent(html_0532b5caf546e30defce4177ec72b0cf);
+            
+        
+
+        circle_marker_e4780ace56c905583e9561402b36680b.bindPopup(popup_24c49958fc1a0cc746cdcf22fef866be)
+        ;
+
+        
+    
+    
+            circle_marker_e4780ace56c905583e9561402b36680b.bindTooltip(
+                `<div>
+                     Швидкість: 14 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_23e83364e319d532c20067242d50223e = L.circleMarker(
+                [49.85102373913044, 23.991738304347827],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.71221532139178, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_4803f611bb9d9dc80e221ffd7bb77677 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_1de904320d045b58909fe6ee27bc2d4d = $(`<div id="html_1de904320d045b58909fe6ee27bc2d4d" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #67</b><br>         <span style="color:purple"><b>Пішохід</b></span><br>         ДТП: 23<br>         Час пік: 16:00     </div>     </div>`)[0];
+                popup_4803f611bb9d9dc80e221ffd7bb77677.setContent(html_1de904320d045b58909fe6ee27bc2d4d);
+            
+        
+
+        circle_marker_23e83364e319d532c20067242d50223e.bindPopup(popup_4803f611bb9d9dc80e221ffd7bb77677)
+        ;
+
+        
+    
+    
+            circle_marker_23e83364e319d532c20067242d50223e.bindTooltip(
+                `<div>
+                     Пішохід: 23 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1e9ac2cd380ce7c5f36d19527e39c088 = L.circleMarker(
+                [49.82854734615384, 23.99023376923077],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.183347464017316, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_18630156402e8d96ef1cd7855821c640 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_f0ede27bc3d76b9dd03c52775598c31d = $(`<div id="html_f0ede27bc3d76b9dd03c52775598c31d" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #68</b><br>         <span style="color:orange"><b>Перехрестя/Світлофор</b></span><br>         ДТП: 26<br>         Час пік: 18:00     </div>     </div>`)[0];
+                popup_18630156402e8d96ef1cd7855821c640.setContent(html_f0ede27bc3d76b9dd03c52775598c31d);
+            
+        
+
+        circle_marker_1e9ac2cd380ce7c5f36d19527e39c088.bindPopup(popup_18630156402e8d96ef1cd7855821c640)
+        ;
+
+        
+    
+    
+            circle_marker_1e9ac2cd380ce7c5f36d19527e39c088.bindTooltip(
+                `<div>
+                     Перехрестя/Світлофор: 26 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bca9940250e60f336f1e23ef9711fae5 = L.circleMarker(
+                [49.801901604569345, 24.01795962411071],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.654246584518585, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_edfdaf232d86ddb36c27efb149450a85 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_18e84c205a45f4e3eeb80720c6a8b983 = $(`<div id="html_18e84c205a45f4e3eeb80720c6a8b983" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #69</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 38<br>         Час пік: 12:00     </div>     </div>`)[0];
+                popup_edfdaf232d86ddb36c27efb149450a85.setContent(html_18e84c205a45f4e3eeb80720c6a8b983);
+            
+        
+
+        circle_marker_bca9940250e60f336f1e23ef9711fae5.bindPopup(popup_edfdaf232d86ddb36c27efb149450a85)
+        ;
+
+        
+    
+    
+            circle_marker_bca9940250e60f336f1e23ef9711fae5.bindTooltip(
+                `<div>
+                     Маневрування: 38 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e6ce5a30f6fdfdbab228441758349470 = L.circleMarker(
+                [49.82267266666667, 23.965183333333332],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.259797429846147, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_6dd46e8966e825d4f9bcaa0f647e96dd = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_64371cc8e4310c239f1920da92fc5282 = $(`<div id="html_64371cc8e4310c239f1920da92fc5282" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #70</b><br>         <span style="color:purple"><b>Пішохід</b></span><br>         ДТП: 12<br>         Час пік: 17:00     </div>     </div>`)[0];
+                popup_6dd46e8966e825d4f9bcaa0f647e96dd.setContent(html_64371cc8e4310c239f1920da92fc5282);
+            
+        
+
+        circle_marker_e6ce5a30f6fdfdbab228441758349470.bindPopup(popup_6dd46e8966e825d4f9bcaa0f647e96dd)
+        ;
+
+        
+    
+    
+            circle_marker_e6ce5a30f6fdfdbab228441758349470.bindTooltip(
+                `<div>
+                     Пішохід: 12 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8a303288fa33481c63220fb0f207a278 = L.circleMarker(
+                [49.804647555555555, 23.981032833333334],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.777755916665761, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_47ce8f0f2906340eb2fbc3e277846128 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_4afe5f8f045e1e6326c4a8fe315fdc5b = $(`<div id="html_4afe5f8f045e1e6326c4a8fe315fdc5b" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #71</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 18<br>         Час пік: 11:00     </div>     </div>`)[0];
+                popup_47ce8f0f2906340eb2fbc3e277846128.setContent(html_4afe5f8f045e1e6326c4a8fe315fdc5b);
+            
+        
+
+        circle_marker_8a303288fa33481c63220fb0f207a278.bindPopup(popup_47ce8f0f2906340eb2fbc3e277846128)
+        ;
+
+        
+    
+    
+            circle_marker_8a303288fa33481c63220fb0f207a278.bindTooltip(
+                `<div>
+                     Маневрування: 18 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8e3281678b60ab48d5ea0e018fd9a82a = L.circleMarker(
+                [49.8707377, 24.0334407],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.591581091193483, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_219c1de92c578eb631eee5146c67c22f = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_2da5f5d00a29da841404f9ecc03cf853 = $(`<div id="html_2da5f5d00a29da841404f9ecc03cf853" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #72</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 10<br>         Час пік: 14:00     </div>     </div>`)[0];
+                popup_219c1de92c578eb631eee5146c67c22f.setContent(html_2da5f5d00a29da841404f9ecc03cf853);
+            
+        
+
+        circle_marker_8e3281678b60ab48d5ea0e018fd9a82a.bindPopup(popup_219c1de92c578eb631eee5146c67c22f)
+        ;
+
+        
+    
+    
+            circle_marker_8e3281678b60ab48d5ea0e018fd9a82a.bindTooltip(
+                `<div>
+                     Маневрування: 10 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a0e898032a86f70478bfd6dd0243b4b8 = L.circleMarker(
+                [49.834012799999996, 24.0349088],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.090354888959125, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_914243312175ab526b3ecdf6a85c0056 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_041ec1df40e61bf505a4de718693d42a = $(`<div id="html_041ec1df40e61bf505a4de718693d42a" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #73</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 15<br>         Час пік: 9:00     </div>     </div>`)[0];
+                popup_914243312175ab526b3ecdf6a85c0056.setContent(html_041ec1df40e61bf505a4de718693d42a);
+            
+        
+
+        circle_marker_a0e898032a86f70478bfd6dd0243b4b8.bindPopup(popup_914243312175ab526b3ecdf6a85c0056)
+        ;
+
+        
+    
+    
+            circle_marker_a0e898032a86f70478bfd6dd0243b4b8.bindTooltip(
+                `<div>
+                     Маневрування: 15 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_54912de4c3e47e61f43fa0482498a037 = L.circleMarker(
+                [49.83265985714286, 23.980074785714287],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.83220080440884, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_2a4f643d413e5bab560c60f23c159bc3 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_c358d8d70e1dd5783fe007853016a301 = $(`<div id="html_c358d8d70e1dd5783fe007853016a301" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #74</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 14<br>         Час пік: 7:00     </div>     </div>`)[0];
+                popup_2a4f643d413e5bab560c60f23c159bc3.setContent(html_c358d8d70e1dd5783fe007853016a301);
+            
+        
+
+        circle_marker_54912de4c3e47e61f43fa0482498a037.bindPopup(popup_2a4f643d413e5bab560c60f23c159bc3)
+        ;
+
+        
+    
+    
+            circle_marker_54912de4c3e47e61f43fa0482498a037.bindTooltip(
+                `<div>
+                     Маневрування: 14 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d8bdeef9c82e00b8e35803a71739edb6 = L.circleMarker(
+                [49.81028877272727, 24.04605440909091],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.5419768637166, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_84539cee912b2a3968c62bc9ff8398d5 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_a20bbdf29c65b669713832a1a7bcd6bf = $(`<div id="html_a20bbdf29c65b669713832a1a7bcd6bf" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #75</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 22<br>         Час пік: 16:00     </div>     </div>`)[0];
+                popup_84539cee912b2a3968c62bc9ff8398d5.setContent(html_a20bbdf29c65b669713832a1a7bcd6bf);
+            
+        
+
+        circle_marker_d8bdeef9c82e00b8e35803a71739edb6.bindPopup(popup_84539cee912b2a3968c62bc9ff8398d5)
+        ;
+
+        
+    
+    
+            circle_marker_d8bdeef9c82e00b8e35803a71739edb6.bindTooltip(
+                `<div>
+                     Маневрування: 22 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0d9060004b77a386bf0820f01d133a28 = L.circleMarker(
+                [49.8319088125, 23.9755054375],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.332853376224865, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_e06e692cf8d66830202ef5004a4261fd = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_e2a2d8a914c4877550fe4dcc68b721d1 = $(`<div id="html_e2a2d8a914c4877550fe4dcc68b721d1" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #76</b><br>         <span style="color:purple"><b>Пішохід</b></span><br>         ДТП: 16<br>         Час пік: 9:00     </div>     </div>`)[0];
+                popup_e06e692cf8d66830202ef5004a4261fd.setContent(html_e2a2d8a914c4877550fe4dcc68b721d1);
+            
+        
+
+        circle_marker_0d9060004b77a386bf0820f01d133a28.bindPopup(popup_e06e692cf8d66830202ef5004a4261fd)
+        ;
+
+        
+    
+    
+            circle_marker_0d9060004b77a386bf0820f01d133a28.bindTooltip(
+                `<div>
+                     Пішохід: 16 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_48ca38b8167b4073a134fba49b6c82fa = L.circleMarker(
+                [49.832265727272734, 24.01188781818182],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.939626599152001, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_64e095f8cee6eb472dca53b159e76d0f = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_2df604e3932fd0331d2325a0ff53e5e3 = $(`<div id="html_2df604e3932fd0331d2325a0ff53e5e3" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #77</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 11<br>         Час пік: 19:00     </div>     </div>`)[0];
+                popup_64e095f8cee6eb472dca53b159e76d0f.setContent(html_2df604e3932fd0331d2325a0ff53e5e3);
+            
+        
+
+        circle_marker_48ca38b8167b4073a134fba49b6c82fa.bindPopup(popup_64e095f8cee6eb472dca53b159e76d0f)
+        ;
+
+        
+    
+    
+            circle_marker_48ca38b8167b4073a134fba49b6c82fa.bindTooltip(
+                `<div>
+                     Маневрування: 11 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0816b2bfb2b950d6bb24757cdc693564 = L.circleMarker(
+                [49.852284022679335, 24.032904575377504],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.777755916665761, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_98d6d8df5299cbaa1bcc0e62f0668b54 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_6be2d902ffde9987a55f22f30624585d = $(`<div id="html_6be2d902ffde9987a55f22f30624585d" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #78</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 18<br>         Час пік: 18:00     </div>     </div>`)[0];
+                popup_98d6d8df5299cbaa1bcc0e62f0668b54.setContent(html_6be2d902ffde9987a55f22f30624585d);
+            
+        
+
+        circle_marker_0816b2bfb2b950d6bb24757cdc693564.bindPopup(popup_98d6d8df5299cbaa1bcc0e62f0668b54)
+        ;
+
+        
+    
+    
+            circle_marker_0816b2bfb2b950d6bb24757cdc693564.bindTooltip(
+                `<div>
+                     Маневрування: 18 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8a672e6984e8c688789fe51bb747da52 = L.circleMarker(
+                [49.8384076923077, 24.055271538461536],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.556229318461034, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_e9e1152183e97f16ad09956960d8b4c1 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_309ef9932e9ccb982d3c5e1a0fbb0aaf = $(`<div id="html_309ef9932e9ccb982d3c5e1a0fbb0aaf" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #79</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 13<br>         Час пік: 13:00     </div>     </div>`)[0];
+                popup_e9e1152183e97f16ad09956960d8b4c1.setContent(html_309ef9932e9ccb982d3c5e1a0fbb0aaf);
+            
+        
+
+        circle_marker_8a672e6984e8c688789fe51bb747da52.bindPopup(popup_e9e1152183e97f16ad09956960d8b4c1)
+        ;
+
+        
+    
+    
+            circle_marker_8a672e6984e8c688789fe51bb747da52.bindTooltip(
+                `<div>
+                     Маневрування: 13 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0f1a6c1da9f4c9c59dcb0c32fa62e30c = L.circleMarker(
+                [49.78375503636364, 24.01415688181818],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.5419768637166, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_cb8af63d202c66a75766ce5d1db52435 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_add574441a4a7e44833466d99256d955 = $(`<div id="html_add574441a4a7e44833466d99256d955" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #80</b><br>         <span style="color:red"><b>Швидкість</b></span><br>         ДТП: 22<br>         Час пік: 16:00     </div>     </div>`)[0];
+                popup_cb8af63d202c66a75766ce5d1db52435.setContent(html_add574441a4a7e44833466d99256d955);
+            
+        
+
+        circle_marker_0f1a6c1da9f4c9c59dcb0c32fa62e30c.bindPopup(popup_cb8af63d202c66a75766ce5d1db52435)
+        ;
+
+        
+    
+    
+            circle_marker_0f1a6c1da9f4c9c59dcb0c32fa62e30c.bindTooltip(
+                `<div>
+                     Швидкість: 22 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8ae4d36f67a39c959352fecd086d4f82 = L.circleMarker(
+                [49.806539071428574, 24.061983357142857],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.83220080440884, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_1a8a5628ecf095d281ffd69828e9ec74 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_6ae311bea5ea8c9513981fa35fcb6594 = $(`<div id="html_6ae311bea5ea8c9513981fa35fcb6594" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #81</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 14<br>         Час пік: 16:00     </div>     </div>`)[0];
+                popup_1a8a5628ecf095d281ffd69828e9ec74.setContent(html_6ae311bea5ea8c9513981fa35fcb6594);
+            
+        
+
+        circle_marker_8ae4d36f67a39c959352fecd086d4f82.bindPopup(popup_1a8a5628ecf095d281ffd69828e9ec74)
+        ;
+
+        
+    
+    
+            circle_marker_8ae4d36f67a39c959352fecd086d4f82.bindTooltip(
+                `<div>
+                     Маневрування: 14 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a5e447a3a50fdb14d03ad9525287a3b9 = L.circleMarker(
+                [49.86103445, 24.04376979],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.591581091193483, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_df9f63f5adff25a5fdf0e0d7f6a2e8b5 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_f406990115d5abb1557e453da8883eaa = $(`<div id="html_f406990115d5abb1557e453da8883eaa" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #82</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 10<br>         Час пік: 18:00     </div>     </div>`)[0];
+                popup_df9f63f5adff25a5fdf0e0d7f6a2e8b5.setContent(html_f406990115d5abb1557e453da8883eaa);
+            
+        
+
+        circle_marker_a5e447a3a50fdb14d03ad9525287a3b9.bindPopup(popup_df9f63f5adff25a5fdf0e0d7f6a2e8b5)
+        ;
+
+        
+    
+    
+            circle_marker_a5e447a3a50fdb14d03ad9525287a3b9.bindTooltip(
+                `<div>
+                     Маневрування: 10 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f0134d8973471dcd70da8d94addf1f4a = L.circleMarker(
+                [49.8173075, 24.0451002],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.591581091193483, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_34f0067e55c4847f7a7f0e5b3b55afa2 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_c3ada27035106b8e537a977aa7217dee = $(`<div id="html_c3ada27035106b8e537a977aa7217dee" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #83</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 10<br>         Час пік: 14:00     </div>     </div>`)[0];
+                popup_34f0067e55c4847f7a7f0e5b3b55afa2.setContent(html_c3ada27035106b8e537a977aa7217dee);
+            
+        
+
+        circle_marker_f0134d8973471dcd70da8d94addf1f4a.bindPopup(popup_34f0067e55c4847f7a7f0e5b3b55afa2)
+        ;
+
+        
+    
+    
+            circle_marker_f0134d8973471dcd70da8d94addf1f4a.bindTooltip(
+                `<div>
+                     Маневрування: 10 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_520e15e0cbacd07defdaacf9fc4a3443 = L.circleMarker(
+                [49.83217233333333, 23.977672444444448],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.210340371976184, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_54611ab3c5986a8f4eda30368d91e3fb = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_8aac1c226364bf3dc116b306e5c85057 = $(`<div id="html_8aac1c226364bf3dc116b306e5c85057" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #84</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 9<br>         Час пік: 8:00     </div>     </div>`)[0];
+                popup_54611ab3c5986a8f4eda30368d91e3fb.setContent(html_8aac1c226364bf3dc116b306e5c85057);
+            
+        
+
+        circle_marker_520e15e0cbacd07defdaacf9fc4a3443.bindPopup(popup_54611ab3c5986a8f4eda30368d91e3fb)
+        ;
+
+        
+    
+    
+            circle_marker_520e15e0cbacd07defdaacf9fc4a3443.bindTooltip(
+                `<div>
+                     Маневрування: 9 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_30ca7c2c8b77dc62a48b327272c5ed83 = L.circleMarker(
+                [49.86523847058824, 24.04459929411765],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.561487031584658, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_e05c660e42e0770d5a734920d8da3185 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_db08b71e102c058e175aeba48ee7a49c = $(`<div id="html_db08b71e102c058e175aeba48ee7a49c" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #85</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 17<br>         Час пік: 17:00     </div>     </div>`)[0];
+                popup_e05c660e42e0770d5a734920d8da3185.setContent(html_db08b71e102c058e175aeba48ee7a49c);
+            
+        
+
+        circle_marker_30ca7c2c8b77dc62a48b327272c5ed83.bindPopup(popup_e05c660e42e0770d5a734920d8da3185)
+        ;
+
+        
+    
+    
+            circle_marker_30ca7c2c8b77dc62a48b327272c5ed83.bindTooltip(
+                `<div>
+                     Маневрування: 17 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1b5ab4729164c9d900a649e3abfabeea = L.circleMarker(
+                [49.787292, 24.014792416666666],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.259797429846147, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_cd14a6456e8b607c106c57ca24b9add5 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_e11898bd78175028f59aa54ef11764ee = $(`<div id="html_e11898bd78175028f59aa54ef11764ee" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #86</b><br>         <span style="color:red"><b>Швидкість</b></span><br>         ДТП: 12<br>         Час пік: 10:00     </div>     </div>`)[0];
+                popup_cd14a6456e8b607c106c57ca24b9add5.setContent(html_e11898bd78175028f59aa54ef11764ee);
+            
+        
+
+        circle_marker_1b5ab4729164c9d900a649e3abfabeea.bindPopup(popup_cd14a6456e8b607c106c57ca24b9add5)
+        ;
+
+        
+    
+    
+            circle_marker_1b5ab4729164c9d900a649e3abfabeea.bindTooltip(
+                `<div>
+                     Швидкість: 12 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b1c814adfff4181067a8193e5792a237 = L.circleMarker(
+                [49.825444250000004, 23.98975145],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.17808975089369, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_01d85a3190d03131e120cc4f0ef98a0a = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_d6491037257f54b453f1475a5bc83f03 = $(`<div id="html_d6491037257f54b453f1475a5bc83f03" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #87</b><br>         <span style="color:orange"><b>Перехрестя/Світлофор</b></span><br>         ДТП: 20<br>         Час пік: 22:00     </div>     </div>`)[0];
+                popup_01d85a3190d03131e120cc4f0ef98a0a.setContent(html_d6491037257f54b453f1475a5bc83f03);
+            
+        
+
+        circle_marker_b1c814adfff4181067a8193e5792a237.bindPopup(popup_01d85a3190d03131e120cc4f0ef98a0a)
+        ;
+
+        
+    
+    
+            circle_marker_b1c814adfff4181067a8193e5792a237.bindTooltip(
+                `<div>
+                     Перехрестя/Світлофор: 20 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5c57a7e30f8bdf72c880ff374f074780 = L.circleMarker(
+                [49.8257866, 23.9678455],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.591581091193483, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_b32f100bc6bcfc7f69614dfce8dbcb6b = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_a369a37f001fadb006523d98b4bc7659 = $(`<div id="html_a369a37f001fadb006523d98b4bc7659" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #88</b><br>         <span style="color:green"><b>Інше</b></span><br>         ДТП: 10<br>         Час пік: 13:00     </div>     </div>`)[0];
+                popup_b32f100bc6bcfc7f69614dfce8dbcb6b.setContent(html_a369a37f001fadb006523d98b4bc7659);
+            
+        
+
+        circle_marker_5c57a7e30f8bdf72c880ff374f074780.bindPopup(popup_b32f100bc6bcfc7f69614dfce8dbcb6b)
+        ;
+
+        
+    
+    
+            circle_marker_5c57a7e30f8bdf72c880ff374f074780.bindTooltip(
+                `<div>
+                     Інше: 10 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d4576394cde6f32dbdd366dddcc5f0f4 = L.circleMarker(
+                [49.82645527272727, 24.010290090909095],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.939626599152001, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_ac9ea59c9ee7d9d54c38a3a0a592768a = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_ae8a7021c7b83946605c7a635a7177cd = $(`<div id="html_ae8a7021c7b83946605c7a635a7177cd" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #89</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 11<br>         Час пік: 16:00     </div>     </div>`)[0];
+                popup_ac9ea59c9ee7d9d54c38a3a0a592768a.setContent(html_ae8a7021c7b83946605c7a635a7177cd);
+            
+        
+
+        circle_marker_d4576394cde6f32dbdd366dddcc5f0f4.bindPopup(popup_ac9ea59c9ee7d9d54c38a3a0a592768a)
+        ;
+
+        
+    
+    
+            circle_marker_d4576394cde6f32dbdd366dddcc5f0f4.bindTooltip(
+                `<div>
+                     Маневрування: 11 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_067c649e77a0276a48b5e5dce65b4d39 = L.circleMarker(
+                [49.828052444444445, 24.071103944444445],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.777755916665761, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_d85ef46a128a2978edc8dd340ca19adb = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_dae50145ba4bbd46d29ee2405c29f53a = $(`<div id="html_dae50145ba4bbd46d29ee2405c29f53a" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #90</b><br>         <span style="color:purple"><b>Пішохід</b></span><br>         ДТП: 18<br>         Час пік: 13:00     </div>     </div>`)[0];
+                popup_d85ef46a128a2978edc8dd340ca19adb.setContent(html_dae50145ba4bbd46d29ee2405c29f53a);
+            
+        
+
+        circle_marker_067c649e77a0276a48b5e5dce65b4d39.bindPopup(popup_d85ef46a128a2978edc8dd340ca19adb)
+        ;
+
+        
+    
+    
+            circle_marker_067c649e77a0276a48b5e5dce65b4d39.bindTooltip(
+                `<div>
+                     Пішохід: 18 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2ea9556dc68afa0baf08c68804bad895 = L.circleMarker(
+                [49.855627235294115, 24.07542311764706],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.561487031584658, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_33dc7f170ab83340c050c444d2596da7 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_0ed666578090ad5a069556ac9f6fac11 = $(`<div id="html_0ed666578090ad5a069556ac9f6fac11" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #91</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 17<br>         Час пік: 11:00     </div>     </div>`)[0];
+                popup_33dc7f170ab83340c050c444d2596da7.setContent(html_0ed666578090ad5a069556ac9f6fac11);
+            
+        
+
+        circle_marker_2ea9556dc68afa0baf08c68804bad895.bindPopup(popup_33dc7f170ab83340c050c444d2596da7)
+        ;
+
+        
+    
+    
+            circle_marker_2ea9556dc68afa0baf08c68804bad895.bindTooltip(
+                `<div>
+                     Маневрування: 17 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6e025b49a7bec5c954e8539ea88ef905 = L.circleMarker(
+                [49.836368, 24.00056533333333],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.783640596221254, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_ae43411e268d2ab9c2d7981306d12a92 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_78bed66d98307dd28ebb7740ef5fe9a5 = $(`<div id="html_78bed66d98307dd28ebb7740ef5fe9a5" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #92</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 6<br>         Час пік: 1:00     </div>     </div>`)[0];
+                popup_ae43411e268d2ab9c2d7981306d12a92.setContent(html_78bed66d98307dd28ebb7740ef5fe9a5);
+            
+        
+
+        circle_marker_6e025b49a7bec5c954e8539ea88ef905.bindPopup(popup_ae43411e268d2ab9c2d7981306d12a92)
+        ;
+
+        
+    
+    
+            circle_marker_6e025b49a7bec5c954e8539ea88ef905.bindTooltip(
+                `<div>
+                     Маневрування: 6 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9c4fd4844986ad77ae0dc449972d2deb = L.circleMarker(
+                [49.847742000000004, 24.028000833333333],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.259797429846147, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_44a4279cbd7ae0b8d018fb97bb6e2437 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_0a4abe911c6243402965e720ff2a8b10 = $(`<div id="html_0a4abe911c6243402965e720ff2a8b10" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #93</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 12<br>         Час пік: 15:00     </div>     </div>`)[0];
+                popup_44a4279cbd7ae0b8d018fb97bb6e2437.setContent(html_0a4abe911c6243402965e720ff2a8b10);
+            
+        
+
+        circle_marker_9c4fd4844986ad77ae0dc449972d2deb.bindPopup(popup_44a4279cbd7ae0b8d018fb97bb6e2437)
+        ;
+
+        
+    
+    
+            circle_marker_9c4fd4844986ad77ae0dc449972d2deb.bindTooltip(
+                `<div>
+                     Маневрування: 12 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_252fa5cc451ef801dfe9a522960becfc = L.circleMarker(
+                [49.85313007834075, 24.035998386509785],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.259797429846147, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_965c3781ad03d24e03a0fc0eea664daa = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_3c55bb11f51cf0560c47ebc087132e70 = $(`<div id="html_3c55bb11f51cf0560c47ebc087132e70" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #94</b><br>         <span style="color:orange"><b>Перехрестя/Світлофор</b></span><br>         ДТП: 12<br>         Час пік: 10:00     </div>     </div>`)[0];
+                popup_965c3781ad03d24e03a0fc0eea664daa.setContent(html_3c55bb11f51cf0560c47ebc087132e70);
+            
+        
+
+        circle_marker_252fa5cc451ef801dfe9a522960becfc.bindPopup(popup_965c3781ad03d24e03a0fc0eea664daa)
+        ;
+
+        
+    
+    
+            circle_marker_252fa5cc451ef801dfe9a522960becfc.bindTooltip(
+                `<div>
+                     Перехрестя/Світлофор: 12 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6aec5ff394844c1e89b9b37b2103c96e = L.circleMarker(
+                [49.87135299744521, 24.05362872201596],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.939626599152001, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_7b607bfb28ef88a74cb8d36a3b136611 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_ef2995c8cbd0315376fe5d48b346e19e = $(`<div id="html_ef2995c8cbd0315376fe5d48b346e19e" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #95</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 11<br>         Час пік: 16:00     </div>     </div>`)[0];
+                popup_7b607bfb28ef88a74cb8d36a3b136611.setContent(html_ef2995c8cbd0315376fe5d48b346e19e);
+            
+        
+
+        circle_marker_6aec5ff394844c1e89b9b37b2103c96e.bindPopup(popup_7b607bfb28ef88a74cb8d36a3b136611)
+        ;
+
+        
+    
+    
+            circle_marker_6aec5ff394844c1e89b9b37b2103c96e.bindTooltip(
+                `<div>
+                     Маневрування: 11 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3f787f61246ed33cc4b097193ea667df = L.circleMarker(
+                [49.830560000000006, 24.004167799999998],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.591581091193483, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_d9c946553bd3c317824cd0e44389ce52 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_eabbfe5e0f9edcb8f1b41d06564000c4 = $(`<div id="html_eabbfe5e0f9edcb8f1b41d06564000c4" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #96</b><br>         <span style="color:orange"><b>Перехрестя/Світлофор</b></span><br>         ДТП: 10<br>         Час пік: 11:00     </div>     </div>`)[0];
+                popup_d9c946553bd3c317824cd0e44389ce52.setContent(html_eabbfe5e0f9edcb8f1b41d06564000c4);
+            
+        
+
+        circle_marker_3f787f61246ed33cc4b097193ea667df.bindPopup(popup_d9c946553bd3c317824cd0e44389ce52)
+        ;
+
+        
+    
+    
+            circle_marker_3f787f61246ed33cc4b097193ea667df.bindTooltip(
+                `<div>
+                     Перехрестя/Світлофор: 10 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ac1390deb56d2eabf5b2cf2eb7a63376 = L.circleMarker(
+                [49.86174815789474, 24.028845842105262],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.982929094215963, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_ec46b8074f615e4ef09db15415820e4a = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_3f34034b96d43e929d0cf96057dbce8a = $(`<div id="html_3f34034b96d43e929d0cf96057dbce8a" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #97</b><br>         <span style="color:orange"><b>Перехрестя/Світлофор</b></span><br>         ДТП: 19<br>         Час пік: 10:00     </div>     </div>`)[0];
+                popup_ec46b8074f615e4ef09db15415820e4a.setContent(html_3f34034b96d43e929d0cf96057dbce8a);
+            
+        
+
+        circle_marker_ac1390deb56d2eabf5b2cf2eb7a63376.bindPopup(popup_ec46b8074f615e4ef09db15415820e4a)
+        ;
+
+        
+    
+    
+            circle_marker_ac1390deb56d2eabf5b2cf2eb7a63376.bindTooltip(
+                `<div>
+                     Перехрестя/Світлофор: 19 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_262c38e4f61dc895d512061a7edf6f91 = L.circleMarker(
+                [49.83671100000001, 23.976935545454545],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.939626599152001, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_354c8911be59b4f3342aeb613e835571 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_c404c3dbde0f32f04f425580acc1be93 = $(`<div id="html_c404c3dbde0f32f04f425580acc1be93" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #98</b><br>         <span style="color:red"><b>Швидкість</b></span><br>         ДТП: 11<br>         Час пік: 16:00     </div>     </div>`)[0];
+                popup_354c8911be59b4f3342aeb613e835571.setContent(html_c404c3dbde0f32f04f425580acc1be93);
+            
+        
+
+        circle_marker_262c38e4f61dc895d512061a7edf6f91.bindPopup(popup_354c8911be59b4f3342aeb613e835571)
+        ;
+
+        
+    
+    
+            circle_marker_262c38e4f61dc895d512061a7edf6f91.bindTooltip(
+                `<div>
+                     Швидкість: 11 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6acb98fa837ae7f98cec1e06c64e8674 = L.circleMarker(
+                [49.83790707142857, 24.023090857142854],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.83220080440884, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_4bbf803c5ba3667d991d7ec06ef0f1d0 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_9cf76d11c35d8721bcd7fd4b3a1107ae = $(`<div id="html_9cf76d11c35d8721bcd7fd4b3a1107ae" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #99</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 14<br>         Час пік: 19:00     </div>     </div>`)[0];
+                popup_4bbf803c5ba3667d991d7ec06ef0f1d0.setContent(html_9cf76d11c35d8721bcd7fd4b3a1107ae);
+            
+        
+
+        circle_marker_6acb98fa837ae7f98cec1e06c64e8674.bindPopup(popup_4bbf803c5ba3667d991d7ec06ef0f1d0)
+        ;
+
+        
+    
+    
+            circle_marker_6acb98fa837ae7f98cec1e06c64e8674.bindTooltip(
+                `<div>
+                     Маневрування: 14 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2b77789d91f7fcff936ef839f7076c4a = L.circleMarker(
+                [49.840242599999996, 24.012151],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.591581091193483, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_a97bbd7479984254186fdc10fec9b469 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_891f61ac1723f2aaf974eb91a796c37f = $(`<div id="html_891f61ac1723f2aaf974eb91a796c37f" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #100</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 10<br>         Час пік: 14:00     </div>     </div>`)[0];
+                popup_a97bbd7479984254186fdc10fec9b469.setContent(html_891f61ac1723f2aaf974eb91a796c37f);
+            
+        
+
+        circle_marker_2b77789d91f7fcff936ef839f7076c4a.bindPopup(popup_a97bbd7479984254186fdc10fec9b469)
+        ;
+
+        
+    
+    
+            circle_marker_2b77789d91f7fcff936ef839f7076c4a.bindTooltip(
+                `<div>
+                     Маневрування: 10 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2041e2250057c2d3be766255ed510318 = L.circleMarker(
+                [49.859909724923746, 24.019477125718495],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.259797429846147, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_41225da3d2e57345ce06047ef1ca2426 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_badc764fbbaf24a3083c79069a22a6e7 = $(`<div id="html_badc764fbbaf24a3083c79069a22a6e7" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #101</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 12<br>         Час пік: 17:00     </div>     </div>`)[0];
+                popup_41225da3d2e57345ce06047ef1ca2426.setContent(html_badc764fbbaf24a3083c79069a22a6e7);
+            
+        
+
+        circle_marker_2041e2250057c2d3be766255ed510318.bindPopup(popup_41225da3d2e57345ce06047ef1ca2426)
+        ;
+
+        
+    
+    
+            circle_marker_2041e2250057c2d3be766255ed510318.bindTooltip(
+                `<div>
+                     Маневрування: 12 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6a9988109926b0ca95aceb8e4060fddb = L.circleMarker(
+                [49.804375, 23.9950646],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.591581091193483, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_171b29f208854fa80547811ac1c3d897 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_328491f0067b9aa54b478c9ff941707c = $(`<div id="html_328491f0067b9aa54b478c9ff941707c" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #102</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 10<br>         Час пік: 19:00     </div>     </div>`)[0];
+                popup_171b29f208854fa80547811ac1c3d897.setContent(html_328491f0067b9aa54b478c9ff941707c);
+            
+        
+
+        circle_marker_6a9988109926b0ca95aceb8e4060fddb.bindPopup(popup_171b29f208854fa80547811ac1c3d897)
+        ;
+
+        
+    
+    
+            circle_marker_6a9988109926b0ca95aceb8e4060fddb.bindTooltip(
+                `<div>
+                     Маневрування: 10 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_168f87b21c9464879627b276c0090f84 = L.circleMarker(
+                [49.79989136363636, 24.034733545454547],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.939626599152001, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_2b50fd70f42745da1e165bc5eed4ab37 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_a5ff32ee194a2e0fb445053ca93358ee = $(`<div id="html_a5ff32ee194a2e0fb445053ca93358ee" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #103</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 11<br>         Час пік: 10:00     </div>     </div>`)[0];
+                popup_2b50fd70f42745da1e165bc5eed4ab37.setContent(html_a5ff32ee194a2e0fb445053ca93358ee);
+            
+        
+
+        circle_marker_168f87b21c9464879627b276c0090f84.bindPopup(popup_2b50fd70f42745da1e165bc5eed4ab37)
+        ;
+
+        
+    
+    
+            circle_marker_168f87b21c9464879627b276c0090f84.bindTooltip(
+                `<div>
+                     Маневрування: 11 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b505065d82feca643b8570fb83c40faa = L.circleMarker(
+                [49.80445681818182, 23.992340363636366],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.939626599152001, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_e73d627589bc1ede0a5cf14a42743374 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_3457f611ae9a1715e7d51efd4e89c48a = $(`<div id="html_3457f611ae9a1715e7d51efd4e89c48a" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #104</b><br>         <span style="color:blue"><b>Маневрування</b></span><br>         ДТП: 11<br>         Час пік: 14:00     </div>     </div>`)[0];
+                popup_e73d627589bc1ede0a5cf14a42743374.setContent(html_3457f611ae9a1715e7d51efd4e89c48a);
+            
+        
+
+        circle_marker_b505065d82feca643b8570fb83c40faa.bindPopup(popup_e73d627589bc1ede0a5cf14a42743374)
+        ;
+
+        
+    
+    
+            circle_marker_b505065d82feca643b8570fb83c40faa.bindTooltip(
+                `<div>
+                     Маневрування: 11 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dbff3021334e2fe19bef86692e18e8d4 = L.circleMarker(
+                [49.8292035, 24.045274],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.83220080440884, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_7b5f4b7b31a7c6bf3a5f522f32b62397 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_3bc33bb9a74f634d95c99aaa454b8e22 = $(`<div id="html_3bc33bb9a74f634d95c99aaa454b8e22" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #105</b><br>         <span style="color:purple"><b>Пішохід</b></span><br>         ДТП: 14<br>         Час пік: 9:00     </div>     </div>`)[0];
+                popup_7b5f4b7b31a7c6bf3a5f522f32b62397.setContent(html_3bc33bb9a74f634d95c99aaa454b8e22);
+            
+        
+
+        circle_marker_dbff3021334e2fe19bef86692e18e8d4.bindPopup(popup_7b5f4b7b31a7c6bf3a5f522f32b62397)
+        ;
+
+        
+    
+    
+            circle_marker_dbff3021334e2fe19bef86692e18e8d4.bindTooltip(
+                `<div>
+                     Пішохід: 14 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c24ecc56f8c7814380c1a38869394ff7 = L.circleMarker(
+                [49.8016525, 24.0207044],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.591581091193483, "stroke": true, "weight": 1}
+            ).addTo(map_b40cf324b34485a809b18cbcfce8bc39);
+        
+    
+        var popup_2f8face116470d799237fffdc3d3f231 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_e06dfc2e5c0b8924f31778fa5977fc2f = $(`<div id="html_e06dfc2e5c0b8924f31778fa5977fc2f" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 160px;">         <b>Зона #106</b><br>         <span style="color:purple"><b>Пішохід</b></span><br>         ДТП: 10<br>         Час пік: 12:00     </div>     </div>`)[0];
+                popup_2f8face116470d799237fffdc3d3f231.setContent(html_e06dfc2e5c0b8924f31778fa5977fc2f);
+            
+        
+
+        circle_marker_c24ecc56f8c7814380c1a38869394ff7.bindPopup(popup_2f8face116470d799237fffdc3d3f231)
+        ;
+
+        
+    
+    
+            circle_marker_c24ecc56f8c7814380c1a38869394ff7.bindTooltip(
+                `<div>
+                     Пішохід: 10 ДТП
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
